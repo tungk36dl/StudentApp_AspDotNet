@@ -1,0 +1,15 @@
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\bin\Debug\net6.0\StudentMngt.Infrastructure.deps.json
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\bin\Debug\net6.0\StudentMngt.Infrastructure.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\bin\Debug\net6.0\StudentMngt.Infrastructure.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\bin\Debug\net6.0\StudentMngt.Domain.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\bin\Debug\net6.0\StudentMngt.Domain.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentMngt.Infrastructure.csproj.AssemblyReference.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentMngt.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentMngt.Infrastructure.AssemblyInfoInputs.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentMngt.Infrastructure.AssemblyInfo.cs
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentMngt.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentM.58E56633.Up2Date
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentMngt.Infrastructure.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\refint\StudentMngt.Infrastructure.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentMngt.Infrastructure.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\ref\StudentMngt.Infrastructure.dll

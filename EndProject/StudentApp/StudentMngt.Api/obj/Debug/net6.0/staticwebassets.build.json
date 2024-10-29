@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vrWk+BPybdFHQOBxGxCLyErpOjFOoEQz9rh83CKj13M=",
+  "Source": "StudentMngt.Api",
+  "BasePath": "_content/StudentMngt.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

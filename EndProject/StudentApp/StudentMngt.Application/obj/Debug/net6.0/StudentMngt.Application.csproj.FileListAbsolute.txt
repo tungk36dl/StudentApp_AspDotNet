@@ -1,0 +1,17 @@
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\bin\Debug\net6.0\StudentMngt.Application.deps.json
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\bin\Debug\net6.0\StudentMngt.Application.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\bin\Debug\net6.0\StudentMngt.Application.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\bin\Debug\net6.0\StudentMngt.Domain.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\bin\Debug\net6.0\StudentMngt.Persistence.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\bin\Debug\net6.0\StudentMngt.Persistence.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\bin\Debug\net6.0\StudentMngt.Domain.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentMngt.Application.csproj.AssemblyReference.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentMngt.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentMngt.Application.AssemblyInfoInputs.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentMngt.Application.AssemblyInfo.cs
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentMngt.Application.csproj.CoreCompileInputs.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentM.EB74F3DD.Up2Date
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentMngt.Application.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\refint\StudentMngt.Application.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentMngt.Application.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\ref\StudentMngt.Application.dll

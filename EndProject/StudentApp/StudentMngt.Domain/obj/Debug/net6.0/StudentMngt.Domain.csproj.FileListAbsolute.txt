@@ -1,0 +1,12 @@
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\bin\Debug\net6.0\StudentMngt.Domain.deps.json
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\bin\Debug\net6.0\StudentMngt.Domain.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\bin\Debug\net6.0\StudentMngt.Domain.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.AssemblyInfoInputs.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.AssemblyInfo.cs
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.csproj.CoreCompileInputs.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\refint\StudentMngt.Domain.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\ref\StudentMngt.Domain.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.csproj.AssemblyReference.cache

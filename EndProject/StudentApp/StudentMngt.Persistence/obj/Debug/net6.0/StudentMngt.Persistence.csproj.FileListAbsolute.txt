@@ -1,0 +1,15 @@
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\bin\Debug\net6.0\StudentMngt.Persistence.deps.json
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\bin\Debug\net6.0\StudentMngt.Persistence.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\bin\Debug\net6.0\StudentMngt.Persistence.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\bin\Debug\net6.0\StudentMngt.Domain.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\bin\Debug\net6.0\StudentMngt.Domain.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentMngt.Persistence.csproj.AssemblyReference.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentMngt.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentMngt.Persistence.AssemblyInfoInputs.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentMngt.Persistence.AssemblyInfo.cs
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentMngt.Persistence.csproj.CoreCompileInputs.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentM.A3CFE557.Up2Date
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentMngt.Persistence.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\refint\StudentMngt.Persistence.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentMngt.Persistence.pdb
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\ref\StudentMngt.Persistence.dll
