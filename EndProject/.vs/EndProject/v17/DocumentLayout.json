@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Hoc_C#\\StudentApp\\EndProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\studentmngt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\studentmngt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|solutionrelative:studentapp\\studentmngt.persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\studentmngt.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\studentmngt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\studentmngt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\studentmngt.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\studentmngt.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppRole.cs",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AppUser.cs",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\AppUser.cs",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\AppUser.cs",
@@ -66,20 +66,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ApplicationDBContext.cs",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
               "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
               "RelativeToolTip": "StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T02:29:30.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T02:29:30.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StudentMngt.Persistence.csproj",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj",
@@ -87,11 +86,12 @@
               "RelativeToolTip": "StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-29T02:27:04.07Z"
+              "WhenOpened": "2024-10-29T02:27:04.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "StudentMngt.Api.csproj",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj",
@@ -99,11 +99,12 @@
               "RelativeToolTip": "StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-29T02:26:48.846Z"
+              "WhenOpened": "2024-10-29T02:26:48.846Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "StudentMngt.Domain.csproj",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
@@ -111,7 +112,8 @@
               "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-29T02:22:05.622Z"
+              "WhenOpened": "2024-10-29T02:22:05.622Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -123,7 +125,8 @@
               "RelativeToolTip": "StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-29T02:15:31.068Z"
+              "WhenOpened": "2024-10-29T02:15:31.068Z",
+              "EditorCaption": ""
             }
           ]
         }

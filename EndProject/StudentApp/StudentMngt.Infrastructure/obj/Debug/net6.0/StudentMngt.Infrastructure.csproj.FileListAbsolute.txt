@@ -13,3 +13,4 @@ D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\refint\StudentMngt.Infrastructure.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentMngt.Infrastructure.pdb
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\ref\StudentMngt.Infrastructure.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Infrastructure\obj\Debug\net6.0\StudentMngt.Infrastructure.sourcelink.json

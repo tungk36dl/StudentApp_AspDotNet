@@ -15,3 +15,4 @@ D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\refint\StudentMngt.Application.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentMngt.Application.pdb
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\ref\StudentMngt.Application.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Application\obj\Debug\net6.0\StudentMngt.Application.sourcelink.json

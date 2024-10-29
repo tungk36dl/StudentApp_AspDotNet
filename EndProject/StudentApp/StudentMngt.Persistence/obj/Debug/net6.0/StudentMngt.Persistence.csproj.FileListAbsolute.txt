@@ -13,3 +13,4 @@ D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\refint\StudentMngt.Persistence.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentMngt.Persistence.pdb
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\ref\StudentMngt.Persistence.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Persistence\obj\Debug\net6.0\StudentMngt.Persistence.sourcelink.json

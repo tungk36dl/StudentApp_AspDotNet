@@ -10,3 +10,4 @@ D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\r
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.pdb
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\ref\StudentMngt.Domain.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.csproj.AssemblyReference.cache
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Domain\obj\Debug\net6.0\StudentMngt.Domain.sourcelink.json
