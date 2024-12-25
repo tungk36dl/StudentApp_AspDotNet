@@ -3,8 +3,220 @@
   "WorkspaceRootPath": "D:\\Hoc_C#\\StudentApp\\EndProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\permissionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\permissionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\removerolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\removerolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\registeruserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\registeruserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\subject\\subjectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\subject\\subjectviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\studentmngt.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\studentmngt.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\enums\\entitystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\enums\\entitystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E59E476-2865-46E0-8689-D836669C4AAA}|StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.infrastructure\\jwtoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E59E476-2865-46E0-8689-D836669C4AAA}|StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj|solutionrelative:studentapp\\studentmngt.infrastructure\\jwtoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\pageresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\pageresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\exceptions\\userexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\exceptions\\userexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\exceptions\\modelexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\exceptions\\modelexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\exceptions\\imageexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\exceptions\\imageexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\exceptions\\fileexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\exceptions\\fileexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\exceptions\\baseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\exceptions\\baseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\infrastructureservices\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\infrastructureservices\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\utility\\commonconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\utility\\commonconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\updatestatusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\updatestatusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\searchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\searchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\responseresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\responseresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\studentmngt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\studentmngt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.persistence\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|solutionrelative:studentapp\\studentmngt.persistence\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.persistence\\efunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|solutionrelative:studentapp\\studentmngt.persistence\\efunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E59E476-2865-46E0-8689-D836669C4AAA}|StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.infrastructure\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E59E476-2865-46E0-8689-D836669C4AAA}|StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj|solutionrelative:studentapp\\studentmngt.infrastructure\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E59E476-2865-46E0-8689-D836669C4AAA}|StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E59E476-2865-46E0-8689-D836669C4AAA}|StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj|solutionrelative:studentapp\\studentmngt.infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\rolesearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\rolesearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\usersearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\usersearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\assignpermissionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\assignpermissionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\utility\\helperutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\utility\\helperutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\studentmngt.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\studentmngt.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E59E476-2865-46E0-8689-D836669C4AAA}|StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.infrastructure\\studentmngt.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8E59E476-2865-46E0-8689-D836669C4AAA}|StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj|solutionrelative:studentapp\\studentmngt.infrastructure\\studentmngt.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.persistence\\studentmngt.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|solutionrelative:studentapp\\studentmngt.persistence\\studentmngt.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\userprofilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\userprofilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\updateuserinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\updateuserinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\authorizedresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\authorizedresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\users\\assignrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\users\\assignrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\teachersubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,26 +227,6 @@
       "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\semester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\iaudittable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\iaudittable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,28 +235,20 @@
       "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\domainentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\enums\\entitystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\enums\\entitystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\studentmngt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\studentmngt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\entities\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\entities\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.persistence\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|solutionrelative:studentapp\\studentmngt.persistence\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|solutionrelative:studentapp\\studentmngt.persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.persistence\\studentmngt.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BB1CE48C-1FD2-48AE-BEF2-6D79C5DF5025}|StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj|solutionrelative:studentapp\\studentmngt.persistence\\studentmngt.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\studentmngt.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\studentmngt.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\studentmngt.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\studentmngt.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,90 +262,88 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Semester.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Semester.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Semester.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Semester.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Semester.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAsAAAA",
+              "DocumentIndex": 5,
+              "Title": "SubjectViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Subject\\SubjectViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Subject\\SubjectViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Subject\\SubjectViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Subject\\SubjectViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T09:05:15.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T04:40:33.775Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Teacher.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Teacher.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Teacher.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Teacher.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Title": "RegisterUserViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RegisterUserViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RegisterUserViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RegisterUserViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RegisterUserViewModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA5wAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T08:42:29.121Z"
+              "WhenOpened": "2024-12-07T14:48:57.475Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Classes.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Classes.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Classes.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Classes.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Classes.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBgAAAAAAAAA",
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\IUserService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\IUserService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\IUserService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T08:30:04.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeacherSubject.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\TeacherSubject.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\TeacherSubject.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\TeacherSubject.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\TeacherSubject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T08:49:04.794Z",
+              "WhenOpened": "2024-12-07T14:48:19.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "RemoveRolesViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RemoveRolesViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RemoveRolesViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RemoveRolesViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RemoveRolesViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:49:04.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PermissionViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\PermissionViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\PermissionViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\PermissionViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\PermissionViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:48:51.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\LoginViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\LoginViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:48:25.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Subject.cs",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Subject.cs",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Subject.cs",
               "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Subject.cs",
               "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Subject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T08:45:57.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Student.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Student.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Student.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Student.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBEAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T08:32:38.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppRole.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T02:33:35.937Z"
             },
             {
               "$type": "Document",
@@ -171,73 +353,433 @@
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\AppUser.cs",
               "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\AppUser.cs",
               "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\AppUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T02:31:50.442Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "IAuditTable.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\IAuditTable.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\IAuditTable.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\IAuditTable.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\IAuditTable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\Services\\UserService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\Services\\UserService.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwCwBAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T08:16:05.623Z"
+              "WhenOpened": "2024-12-07T14:52:46.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DomainEntity.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\DomainEntity.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\DomainEntity.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\DomainEntity.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\DomainEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Api\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T08:14:42.529Z"
+              "WhenOpened": "2024-12-10T06:36:58.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "EntityStatus.cs",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Enums\\EntityStatus.cs",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Enums\\EntityStatus.cs",
               "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Enums\\EntityStatus.cs",
               "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Enums\\EntityStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T08:18:44.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Student.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Student.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Student.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T08:32:38.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\appsettings.json",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\appsettings.json",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-14T10:58:23.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Teacher.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Teacher.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Teacher.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Teacher.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T08:42:29.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StudentMngt.Application.csproj",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-29T02:15:31.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:52:21.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "JwtOption.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Infrastructure\\JwtOption.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Infrastructure\\JwtOption.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Infrastructure\\JwtOption.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Infrastructure\\JwtOption.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:38:10.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\IUnitOfWork.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\IUnitOfWork.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:43:21.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PageResult.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\PageResult.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\PageResult.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\PageResult.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\PageResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:44:00.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserException.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\UserException.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Exceptions\\UserException.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\UserException.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Exceptions\\UserException.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwBUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:46:48.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:46:27.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ModelException.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\ModelException.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Exceptions\\ModelException.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\ModelException.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Exceptions\\ModelException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:46:17.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ImageException.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\ImageException.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Exceptions\\ImageException.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\ImageException.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Exceptions\\ImageException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:46:09.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FileException.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\FileException.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Exceptions\\FileException.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\FileException.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Exceptions\\FileException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:46:02.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BaseException.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\BaseException.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Exceptions\\BaseException.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\BaseException.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Exceptions\\BaseException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:45:14.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Exceptions\\BadRequestException.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Exceptions\\BadRequestException.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Exceptions\\BadRequestException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:45:10.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IJwtTokenService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\InfrastructureServices\\IJwtTokenService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\InfrastructureServices\\IJwtTokenService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\InfrastructureServices\\IJwtTokenService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\InfrastructureServices\\IJwtTokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:44:55.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CommonConstants.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Utility\\CommonConstants.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Utility\\CommonConstants.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Utility\\CommonConstants.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Utility\\CommonConstants.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:44:36.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UpdateStatusViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\UpdateStatusViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\UpdateStatusViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\UpdateStatusViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\UpdateStatusViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:20:35.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SearchQuery.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\SearchQuery.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\SearchQuery.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\SearchQuery.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\SearchQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:44:22.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ResponseResult.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ResponseResult.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ResponseResult.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ResponseResult.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ResponseResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:44:12.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Persistence\\GenericRepository.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\GenericRepository.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Persistence\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:41:37.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "StudentMngt.Api.csproj",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj",
               "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj",
               "RelativeToolTip": "StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-10-29T02:26:48.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAAAAAA",
+              "DocumentIndex": 33,
+              "Title": "EFUnitOfWork.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\EFUnitOfWork.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Persistence\\EFUnitOfWork.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\EFUnitOfWork.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Persistence\\EFUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T02:29:30.216Z"
+              "WhenOpened": "2024-12-07T14:39:23.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 34,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Infrastructure\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Infrastructure\\JwtTokenService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Infrastructure\\JwtTokenService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Infrastructure\\JwtTokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:38:11.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Infrastructure\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Infrastructure\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Infrastructure\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Infrastructure\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:38:14.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RoleSearchQuery.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RoleSearchQuery.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RoleSearchQuery.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RoleSearchQuery.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RoleSearchQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:49:09.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UserSearchQuery.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserSearchQuery.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserSearchQuery.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserSearchQuery.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserSearchQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:51:26.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\IGenericRepository.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\IGenericRepository.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:43:30.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AssignPermissionsViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AssignPermissionsViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AssignPermissionsViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AssignPermissionsViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AssignPermissionsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:47:54.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "HelperUtility.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Utility\\HelperUtility.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Utility\\HelperUtility.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Utility\\HelperUtility.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Utility\\HelperUtility.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:44:43.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "StudentMngt.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Infrastructure\\StudentMngt.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-10T06:58:37.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "StudentMngt.Domain.csproj",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-29T02:22:05.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
               "Title": "StudentMngt.Persistence.csproj",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Persistence\\StudentMngt.Persistence.csproj",
@@ -249,27 +791,219 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "StudentMngt.Domain.csproj",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-29T02:22:05.622Z"
+              "DocumentIndex": 44,
+              "Title": "RolePermission.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\RolePermission.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\RolePermission.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\RolePermission.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\RolePermission.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T06:39:59.635Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "StudentMngt.Application.csproj",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-29T02:15:31.068Z"
+              "DocumentIndex": 45,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Permission.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Permission.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Permission.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Permission.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T06:39:37.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Program.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\Program.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Program.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T06:37:44.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:51:41.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UserProfileModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserProfileModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserProfileModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserProfileModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UserProfileModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:51:21.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "UpdateUserInfoViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UpdateUserInfoViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UpdateUserInfoViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UpdateUserInfoViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\UpdateUserInfoViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:50:59.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "RoleViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RoleViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RoleViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RoleViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\RoleViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:49:30.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AuthorizedResponseModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AuthorizedResponseModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AuthorizedResponseModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AuthorizedResponseModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AuthorizedResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:48:08.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\ChangePasswordViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\ChangePasswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:48:14.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "AssignRolesViewModel.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AssignRolesViewModel.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AssignRolesViewModel.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AssignRolesViewModel.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\Users\\AssignRolesViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:48:01.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "TeacherSubject.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\TeacherSubject.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\TeacherSubject.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\TeacherSubject.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\TeacherSubject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T08:49:04.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Semester.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Semester.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Semester.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Semester.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Semester.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T09:05:15.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IAuditTable.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\IAuditTable.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\IAuditTable.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\IAuditTable.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\IAuditTable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T08:16:05.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "DomainEntity.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\DomainEntity.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\DomainEntity.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\DomainEntity.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\DomainEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T08:14:42.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Classes.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Classes.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\Classes.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\Classes.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\Classes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T08:30:04.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "AppRole.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Entities\\AppRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T02:33:35.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Persistence\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Persistence\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwDAAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:41:56.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Persistence\\ApplicationDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T02:29:30.216Z"
             }
           ]
         }
