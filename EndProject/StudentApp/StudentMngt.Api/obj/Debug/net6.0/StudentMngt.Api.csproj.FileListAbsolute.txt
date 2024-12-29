@@ -42,7 +42,6 @@ D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Micr
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
-D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
@@ -94,3 +93,15 @@ D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Seri
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\StackExchange.Redis.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\System.Diagnostics.PerformanceCounter.dll
 D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\StudentMngt.Api.staticwebassets.endpoints.json
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\obj\Debug\net6.0\staticwebassets\msbuild.StudentMngt.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Serilog.AspNetCore.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+D:\Hoc_C#\StudentApp\EndProject\StudentApp\StudentMngt.Api\bin\Debug\net6.0\Serilog.Sinks.File.dll

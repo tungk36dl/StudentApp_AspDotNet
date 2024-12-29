@@ -9,6 +9,5 @@ namespace StudentMngt.Domain.Entities
 {
     public class AppRole : IdentityRole<Guid>
     {
-        public virtual ICollection<IdentityRoleClaim<Guid>> Claims { get; set; }
     }
 }

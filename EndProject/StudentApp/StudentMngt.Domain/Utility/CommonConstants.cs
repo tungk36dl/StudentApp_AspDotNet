@@ -26,30 +26,12 @@ namespace StudentMngt.Domain.Utility
             public const string DELETE_ROLE_PERMISSION = "DELETE_ROLE_PERMISSION";
             public const string VIEW_ROLE_PERMISSION = "VIEW_ROLE_PERMISSION";
 
-            public const string PRODUCT_PERMISSION = "PRODUCT_PERMISSION";
-            public const string ADD_PRODUCT_PERMISSION = "ADD_PRODUCT_PERMISSION";
-            public const string UPDATE_PRODUCT_PERMISSION = "UPDATE_PRODUCT_PERMISSION";
-            public const string DELETE_PRODUCT_PERMISSION = "DELETE_PRODUCT_PERMISSION";
-            public const string VIEW_PRODUCT_PERMISSION = "VIEW_PRODUCT_PERMISSION";
-
-
-            public const string VARIANT_PERMISSION = "VARIANT_PERMISSION";
-            public const string ADD_VARIANT_PERMISSION = "ADD_VARIANT_PERMISSION";
-            public const string UPDATE_VARIANT_PERMISSION = "UPDATE_VARIANT_PERMISSION";
-            public const string DELETE_VARIANT_PERMISSION = "DELETE_VARIANT_PERMISSION";
-            public const string VIEW_VARIANT_PERMISSION = "VIEW_VARIANT_PERMISSION";
-
-            public const string CATEGORY_PERMISSION = "CATEGORY_PERMISSION";
-            public const string ADD_CATEGORY_PERMISSION = "ADD_CATEGORY_PERMISSION";
-            public const string UPDATE_CATEGORY_PERMISSION = "UPDATE_CATEGORY_PERMISSION";
-            public const string DELETE_CATEGORY_PERMISSION = "DELETE_CATEGORY_PERMISSION";
-            public const string VIEW_CATEGORY_PERMISSION = "VIEW_CATEGORY_PERMISSION";
-
-            public const string ORDER_PERMISSION = "ORDER_PERMISSION";
-            public const string ADD_ORDER_PERMISSION = "ADD_ORDER_PERMISSION";
-            public const string UPDATE_ORDER_PERMISSION = "UPDATE_ORDER_PERMISSION";
-            public const string DELETE_ORDER_PERMISSION = "DELETE_ORDER_PERMISSION";
-            public const string VIEW_ORDER_PERMISSION = "VIEW_ORDER_PERMISSION";
+            public const string SUBJECT_PERMISSION = "SUBJECT_PERMISSION";
+            public const string ADD_SUBJECT_PERMISSION = "ADD_SUBJECT_PERMISSION";
+            public const string UPDATE_SUBJECT_PERMISSION = "UPDATE_SUBJECT_PERMISSION";
+            public const string DELETE_SUBJECT_PERMISSION = "DELETE_SUBJECT_PERMISSION";
+            public const string VIEW_SUBJECT_PERMISSION = "VIEW_SUBJECT_PERMISSION";
+            
 
             public const string IMAGE_PERMISSION = "IMAGE_PERMISSION";
             public const string ADD_IMAGE_PERMISSION = "ADD_IMAGE_PERMISSION";

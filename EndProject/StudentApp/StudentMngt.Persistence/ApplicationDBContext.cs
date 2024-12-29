@@ -20,5 +20,9 @@ namespace StudentMngt.Persistence
             base.OnModelCreating(modelBuilder);
 
         }
+
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Score> Scores { get; set; }
+
     }
 }

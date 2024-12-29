@@ -1158,7 +1158,10 @@
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
         },
         "runtime": {
-          "StudentMngt.Domain.dll": {}
+          "StudentMngt.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "StudentMngt.Persistence/1.0.0": {
@@ -1168,7 +1171,10 @@
           "StudentMngt.Domain": "1.0.0"
         },
         "runtime": {
-          "StudentMngt.Persistence.dll": {}
+          "StudentMngt.Persistence.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

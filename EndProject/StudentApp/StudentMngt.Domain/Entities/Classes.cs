@@ -14,7 +14,7 @@ namespace StudentMngt.Domain.Entities
         [Column(TypeName = "nvarchar(1000)")]
         public string ClassName { get; set; }
 
-        public ICollection<Student> students { get; set; }
+        public ICollection<AppUser> students { get; set; }
         public DateTime? CreatedDate { get; set; }
         public Guid? CreatedBy { get; set; }
         public DateTime? UpdatedDate { get; set; }

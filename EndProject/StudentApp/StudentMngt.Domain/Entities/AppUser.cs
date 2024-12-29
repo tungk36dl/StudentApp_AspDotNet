@@ -10,8 +10,11 @@ namespace StudentMngt.Domain.Entities
     public class AppUser : IdentityUser<Guid>
     {
         public bool IsSystemUser { get; set; }
-        public virtual ICollection<IdentityUserClaim<Guid>> Claims { get; set; }
-        public virtual ICollection<IdentityUserLogin<Guid>> Logins { get; set; }
-        public virtual ICollection<IdentityUserToken<Guid>> Tokens { get; set; }
+
+        public string Code { get; set; }
+
+        public string FullName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public string Address { get; set; }
     }
 }

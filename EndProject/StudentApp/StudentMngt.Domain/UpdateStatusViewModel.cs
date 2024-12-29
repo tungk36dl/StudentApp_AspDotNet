@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace StudentMngt.Domain
 {
-    internal class UpdateStatusViewModel
+    public class UpdateStatusViewModel
     {
         public EntityStatus Status { get; set; }
 
