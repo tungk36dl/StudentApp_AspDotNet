@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using StudentMngt.Domain;
-using StudentMngt.Domain.ApplicationServices.Subject;
+using StudentMngt.Domain.ApplicationServices.SubjectAS;
 using StudentMngt.Domain.ApplicationServices.Users;
 using StudentMngt.Domain.Entities;
 using StudentMngt.Domain.Exceptions;
@@ -60,7 +60,7 @@ namespace StudentMngt.Application.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex.Message, ex );
+                _logger.LogError(ex.Message, ex);
                 throw new SubjectException.DeleteSubjectException(subjectId);
             }
         }
@@ -68,13 +68,13 @@ namespace StudentMngt.Application.Services
         public async Task<SubjectViewModel> GetSubjectById(Guid subjectId)
         {
             var subject = await _subjectRepository.FindByIdAsync(subjectId);
-            if(subject == null)
+            if (subject == null)
             {
                 throw new SubjectException.SubjectNotFoundException(subjectId);
             }
             var result = new SubjectViewModel()
             {
-                SubjectId = subject.Id,
+                Id = subject.Id,
                 SubjectName = subject.SubjectName,
                 Status = subject.Status,
             };
@@ -89,7 +89,7 @@ namespace StudentMngt.Application.Services
             };
             var subjectQuery = _subjectRepository.FindAll();
             // Chỉ hiển thị các subject đang active
-            if(query.DisplayActiveItem)
+            if (query.DisplayActiveItem)
             {
                 subjectQuery = subjectQuery.Where(s => s.Status == EntityStatus.Active);
             }
@@ -102,7 +102,7 @@ namespace StudentMngt.Application.Services
                 .Skip(query.SkipNo).Take(query.TakeNo)
                 .Select(s => new SubjectViewModel()
                 {
-                    SubjectId = s.Id,
+                    Id = s.Id,
                     SubjectName = s.SubjectName,
                     Status = s.Status
                 }).ToListAsync();
@@ -134,10 +134,10 @@ namespace StudentMngt.Application.Services
 
         public async Task<ResponseResult> UpdateSubject(UpdateSubjectViewModel model, UserProfileModel currentUser)
         {
-            var subject = await _subjectRepository.FindByIdAsync(model.SubjectId);
+            var subject = await _subjectRepository.FindByIdAsync(model.Id);
             if (subject == null)
             {
-                throw new SubjectException.UpdateSubjectException(model.SubjectId);
+                throw new SubjectException.UpdateSubjectException(model.Id);
             }
 
             subject.SubjectName = model.SubjectName;
@@ -145,12 +145,12 @@ namespace StudentMngt.Application.Services
             {
                 _subjectRepository.Update(subject);
                 await _unitOfWork.SaveChangesAsync();
-                return ResponseResult.Success($"Update Subject with id {model.SubjectId} successfully.");
+                return ResponseResult.Success($"Update Subject with id {model.Id} successfully.");
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message, ex);
-                throw new SubjectException.UpdateSubjectException(model.SubjectId);
+                throw new SubjectException.UpdateSubjectException(model.Id);
             }
         }
     }

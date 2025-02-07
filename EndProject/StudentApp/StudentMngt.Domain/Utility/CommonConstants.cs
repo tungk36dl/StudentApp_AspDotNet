@@ -31,7 +31,32 @@ namespace StudentMngt.Domain.Utility
             public const string UPDATE_SUBJECT_PERMISSION = "UPDATE_SUBJECT_PERMISSION";
             public const string DELETE_SUBJECT_PERMISSION = "DELETE_SUBJECT_PERMISSION";
             public const string VIEW_SUBJECT_PERMISSION = "VIEW_SUBJECT_PERMISSION";
-            
+
+            public const string SUBJECT_DETAIL_PERMISSION = "SUBJECT_DETAIL_PERMISSION";
+            public const string ADD_SUBJECT_DETAIL_PERMISSION = "ADD_SUBJECT_DETAIL_PERMISSION";
+            public const string UPDATE_SUBJECT_DETAIL_PERMISSION = "UPDATE_SUBJECT_DETAIL_PERMISSION";
+            public const string DELETE_SUBJECT_DETAIL_PERMISSION = "DELETE_SUBJECT_DETAIL_PERMISSION";
+            public const string VIEW_SUBJECT_DETAIL_PERMISSION = "VIEW_SUBJECT_DETAIL_PERMISSION";
+
+
+            public const string COHORT_PERMISSION = "COHORT_PERMISSION";
+            public const string ADD_COHORT_PERMISSION = "ADD_COHORT_PERMISSION";
+            public const string UPDATE_COHORT_PERMISSION = "UPDATE_COHORT_PERMISSION";
+            public const string DELETE_COHORT_PERMISSION = "DELETE_COHORT_PERMISSION";
+            public const string VIEW_COHORT_PERMISSION = "VIEW_COHORT_PERMISSION";
+
+            public const string MAJOR_PERMISSION = "MAJOR_PERMISSION";
+            public const string ADD_MAJOR_PERMISSION = "ADD_MAJOR_PERMISSION";
+            public const string UPDATE_MAJOR_PERMISSION = "UPDATE_MAJOR_PERMISSION";
+            public const string DELETE_MAJOR_PERMISSION = "DELETE_MAJOR_PERMISSION";
+            public const string VIEW_MAJOR_PERMISSION = "VIEW_MAJOR_PERMISSION";
+
+            public const string CLASSES_PERMISSION = "CLASSES_PERMISSION";
+            public const string ADD_CLASSES_PERMISSION = "ADD_CLASSES_PERMISSION";
+            public const string UPDATE_CLASSES_PERMISSION = "UPDATE_CLASSES_PERMISSION";
+            public const string DELETE_CLASSES_PERMISSION = "DELETE_CLASSES_PERMISSION";
+            public const string VIEW_CLASSES_PERMISSION = "VIEW_CLASSES_PERMISSION";
+
 
             public const string IMAGE_PERMISSION = "IMAGE_PERMISSION";
             public const string ADD_IMAGE_PERMISSION = "ADD_IMAGE_PERMISSION";

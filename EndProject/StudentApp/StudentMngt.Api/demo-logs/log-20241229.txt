@@ -1,0 +1,51 @@
+2024-12-29 15:21:48.626 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:21:48.838 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:22:05.963 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:22:07.978 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:22:10.826 +07:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Score] (
+    [Id] uniqueidentifier NOT NULL,
+    [SubjectDetailId] uniqueidentifier NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [score] decimal(18,2) NOT NULL,
+    [Semesters] int NOT NULL,
+    CONSTRAINT [PK_Score] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Score_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Score_SubjectDetails_SubjectDetailId] FOREIGN KEY ([SubjectDetailId]) REFERENCES [SubjectDetails] ([Id]) ON DELETE CASCADE
+);
+2024-12-29 15:30:31.946 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:30:32.057 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:30:44.972 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:30:45.791 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:30:46.295 +07:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Scores] (
+    [Id] uniqueidentifier NOT NULL,
+    [SubjectDetailId] uniqueidentifier NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [score] decimal(18,2) NOT NULL,
+    [Semesters] int NOT NULL,
+    CONSTRAINT [PK_Scores] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Scores_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Scores_SubjectDetails_SubjectDetailId] FOREIGN KEY ([SubjectDetailId]) REFERENCES [SubjectDetails] ([Id]) ON DELETE CASCADE
+);
+2024-12-29 15:34:46.676 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:34:46.791 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:34:52.130 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:34:52.413 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:34:52.890 +07:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Scores] (
+    [Id] uniqueidentifier NOT NULL,
+    [SubjectDetailId] uniqueidentifier NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [score] decimal(18,2) NOT NULL,
+    [Semesters] int NOT NULL,
+    CONSTRAINT [PK_Scores] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Scores_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Scores_SubjectDetails_SubjectDetailId] FOREIGN KEY ([SubjectDetailId]) REFERENCES [SubjectDetails] ([Id]) ON DELETE CASCADE
+);
+2024-12-29 15:54:40.759 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 15:54:40.885 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 17:13:03.857 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 17:13:04.029 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 17:13:13.679 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-29 17:13:15.439 +07:00 [WRN] No store type was specified for the decimal property 'score' on entity type 'Score'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.

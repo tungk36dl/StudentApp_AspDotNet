@@ -12,18 +12,23 @@ namespace StudentMngt.Domain.Entities
     [Table("SubjectDetails")]
     public class SubjectDetail : DomainEntity<Guid>, IAuditTable
     {
+        public int Credits { get; set; }
+
+        public Guid TeacherId { get; set; }
+        [ForeignKey(nameof(TeacherId))]
+        public AppUser Teacher { get; set; }
+
+        public Guid SubjectId { get; set; }
+        [ForeignKey(nameof(SubjectId))]
+        public Subject Subject { get; set; }
+
+        public Guid ClassId { get; set; }
+
         public DateTime? CreatedDate { get; set; }
         public Guid? CreatedBy { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public Guid? UpdatedBy { get; set; }
         public EntityStatus Status { get; set; }
 
-        public int SoTinChi { get; set; }
-        public String TeacherId { get; set; }
-        public Guid userId { get; set; }
-        public Subject Subject { get; set; }
-        [ForeignKey(nameof(TeacherId))]
-        public AppUser Teacher { get; set; }
-        public Semesters Semesters { get; set; }
     }
 }

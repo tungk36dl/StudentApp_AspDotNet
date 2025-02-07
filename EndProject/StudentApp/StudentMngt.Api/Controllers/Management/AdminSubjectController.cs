@@ -2,7 +2,7 @@
 using StudentMngt.Api.Base;
 using StudentMngt.Api.Filters;
 using StudentMngt.Domain;
-using StudentMngt.Domain.ApplicationServices.Subject;
+using StudentMngt.Domain.ApplicationServices.SubjectAS;
 using StudentMngt.Domain.Utility;
 
 namespace StudentMngt.Api.Controllers.Management
@@ -14,6 +14,23 @@ namespace StudentMngt.Api.Controllers.Management
         public AdminSubjectController(ISubjectService subjectService)
         {
             _subjectService = subjectService;
+        }
+
+        [HttpGet]
+        [Route("get-all-subject")]
+        public async Task<PageResult<SubjectViewModel>> GetAllSubject(SubjectSearchQuery query)
+        {
+            query.UserId = CurrentUser.UserId;
+            var result = await _subjectService.GetSubjects(query);
+            return result;
+        }
+
+        [HttpGet]
+        [Route("get-subject/{subjectId}")]
+        public async Task<SubjectViewModel> GetSubjectById(Guid subjectId)
+        {
+            var result = await _subjectService.GetSubjectById(subjectId);
+            return result;
         }
 
         [Permission(CommonConstants.Permissions.ADD_SUBJECT_PERMISSION)]

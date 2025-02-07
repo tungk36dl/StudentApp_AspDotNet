@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentMngt.Domain.ApplicationServices.Subject
+namespace StudentMngt.Domain.ApplicationServices.MajorAS
 {
-    public class UpdateSubjectViewModel
+    public class CreateMajorViewModel
     {
         [Required]
-        public String SubjectName { get; set; }
+        public String MajorName { get; set; }
 
         [Required]
-        public Guid SubjectId { get; set; }
+        public Guid CohortId { get; set; }
     }
 }
