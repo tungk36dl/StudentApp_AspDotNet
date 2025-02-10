@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using StudentMngt.Api;
+using StudentMngt.Application;
 using StudentMngt.Domain.ApplicationServices.Users;
 using StudentMngt.Infrastructure;
 using StudentMngt.Persistence;
@@ -21,6 +22,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//service of applications
+builder.Services.AddServicesApplication();
+
 
 //service of infrastructure
 builder.Services.AddServicesInfrastructure();
@@ -47,11 +52,14 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+//app.UseStaticFiles();
 
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-//InitDatabase(app);
+InitDatabase(app);
 app.Run();
 
 void InitDatabase(IApplicationBuilder app)

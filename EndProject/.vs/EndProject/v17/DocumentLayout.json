@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "D:\\Hoc_C#\\StudentApp\\EndProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\controllers\\management\\subjectdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\controllers\\management\\subjectdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\filters\\applicationauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\filters\\applicationauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\controllers\\management\\adminsubjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\controllers\\management\\adminsubjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.api\\controllers\\management\\admincohortcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D16422C-FE2C-4B15-BCC5-5BCBF8964D21}|StudentApp\\StudentMngt.Api\\StudentMngt.Api.csproj|solutionrelative:studentapp\\studentmngt.api\\controllers\\management\\admincohortcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\subjectas\\subjectsearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\subjectas\\subjectsearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\services\\subjectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\services\\subjectdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\services\\subjectdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\utility\\commonconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\utility\\commonconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\subjectdetailas\\subjectdetailsearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\subjectdetailas\\subjectdetailsearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\services\\majorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\services\\majorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.domain\\applicationservices\\cohortas\\cohortsearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B69D0D-B6F3-40EB-95A9-F63E6839FDCC}|StudentApp\\StudentMngt.Domain\\StudentMngt.Domain.csproj|solutionrelative:studentapp\\studentmngt.domain\\applicationservices\\cohortas\\cohortsearchquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\services\\classesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\services\\classesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|d:\\hoc_c#\\studentapp\\endproject\\studentapp\\studentmngt.application\\services\\cohortservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC269A11-2956-4AB2-AE83-4CDEDD83028F}|StudentApp\\StudentMngt.Application\\StudentMngt.Application.csproj|solutionrelative:studentapp\\studentmngt.application\\services\\cohortservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,128 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 712,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApplicationAuthorizeAttribute.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Filters\\ApplicationAuthorizeAttribute.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\Filters\\ApplicationAuthorizeAttribute.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Filters\\ApplicationAuthorizeAttribute.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Api\\Filters\\ApplicationAuthorizeAttribute.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAWwC0AAABEAAAAAAAAAA==",
+              "Title": "SubjectService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\SubjectService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\Services\\SubjectService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\SubjectService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\Services\\SubjectService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T03:28:39.318Z",
+              "WhenOpened": "2025-02-09T10:15:17.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Program.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\Program.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Program.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Api\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAEwCEAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T03:28:16.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CohortSearchQuery.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\CohortAS\\CohortSearchQuery.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\CohortAS\\CohortSearchQuery.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\CohortAS\\CohortSearchQuery.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\CohortAS\\CohortSearchQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T03:12:40.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SubjectSearchQuery.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\SubjectAS\\SubjectSearchQuery.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\SubjectAS\\SubjectSearchQuery.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\SubjectAS\\SubjectSearchQuery.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\SubjectAS\\SubjectSearchQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T02:58:27.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "SubjectDetailService.cs",
               "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\SubjectDetailService.cs",
               "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\Services\\SubjectDetailService.cs",
               "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\SubjectDetailService.cs",
               "RelativeToolTip": "StudentApp\\StudentMngt.Application\\Services\\SubjectDetailService.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAkwHIAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T02:45:43.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SubjectDetailSearchQuery.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\SubjectDetailAS\\SubjectDetailSearchQuery.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\SubjectDetailAS\\SubjectDetailSearchQuery.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\ApplicationServices\\SubjectDetailAS\\SubjectDetailSearchQuery.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\ApplicationServices\\SubjectDetailAS\\SubjectDetailSearchQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T02:42:58.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CommonConstants.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Utility\\CommonConstants.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Domain\\Utility\\CommonConstants.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Domain\\Utility\\CommonConstants.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Domain\\Utility\\CommonConstants.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAwwDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T12:36:55.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminCohortController.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Controllers\\Management\\AdminCohortController.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\Controllers\\Management\\AdminCohortController.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Controllers\\Management\\AdminCohortController.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Api\\Controllers\\Management\\AdminCohortController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T10:17:32.163Z"
+              "WhenOpened": "2025-02-09T10:15:07.503Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AdminSubjectController.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Controllers\\Management\\AdminSubjectController.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\Controllers\\Management\\AdminSubjectController.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Controllers\\Management\\AdminSubjectController.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Api\\Controllers\\Management\\AdminSubjectController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "Title": "ScoreService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\ScoreService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\Services\\ScoreService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\ScoreService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\Services\\ScoreService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T10:08:32.251Z"
+              "WhenOpened": "2025-02-09T10:14:58.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClassesService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\ClassesService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\Services\\ClassesService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\ClassesService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\Services\\ClassesService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T10:14:39.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MajorService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\MajorService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\Services\\MajorService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\MajorService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\Services\\MajorService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T10:14:32.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CohortService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\CohortService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\Services\\CohortService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\CohortService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\Services\\CohortService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T09:32:23.495Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SubjectDetailController.cs",
-              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Controllers\\Management\\SubjectDetailController.cs",
-              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Api\\Controllers\\Management\\SubjectDetailController.cs",
-              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Api\\Controllers\\Management\\SubjectDetailController.cs",
-              "RelativeToolTip": "StudentApp\\StudentMngt.Api\\Controllers\\Management\\SubjectDetailController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAARAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "StudentApp\\StudentMngt.Application\\Services\\UserService.cs",
+              "ToolTip": "D:\\Hoc_C#\\StudentApp\\EndProject\\StudentApp\\StudentMngt.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "StudentApp\\StudentMngt.Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T10:08:30.432Z",
+              "WhenOpened": "2025-02-09T09:28:19.756Z",
               "EditorCaption": ""
             }
           ]

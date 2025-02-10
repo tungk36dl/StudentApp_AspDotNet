@@ -27,7 +27,7 @@ namespace StudentMngt.Api.Controllers.Management
         }
 
         [HttpGet]
-        [Route("get-subject-detail/{cohortId}")]
+        [Route("get-cohort-detail/{cohortId}")]
         public async Task<CohortViewModel> GetCohortById(Guid cohortId)
         {
             var result = await _cohortService.GetCohortById(cohortId);
@@ -55,9 +55,9 @@ namespace StudentMngt.Api.Controllers.Management
         [Permission(CommonConstants.Permissions.DELETE_COHORT_PERMISSION)]
         [HttpDelete]
         [Route("delete-cohort/{cohortId}")]
-        public async Task<ResponseResult> DeleteCohort(Guid corhortId)
+        public async Task<ResponseResult> DeleteCohort(Guid cohortId)
         {
-            var result = await _cohortService.DeleteCohort(corhortId);
+            var result = await _cohortService.DeleteCohort(cohortId);
             return result;
         }
 

@@ -3,11 +3,14 @@ using StudentMngt.Domain.Exceptions;
 using StudentMngt.Domain.Utility;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Newtonsoft.Json;
+using Demo.Api.Controllers.Public;
 
 namespace StudentMngt.Api.Filters
 {
     public class ApplicationAuthorizeAttribute : Attribute, IAuthorizationFilter
     {
+        private readonly ILogger<NoAuthController> _logger;
+
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             var userName = context.HttpContext.User.Claims?
@@ -21,8 +24,10 @@ namespace StudentMngt.Api.Filters
             var userService = (IUserService?)context.HttpContext.RequestServices.GetService(typeof(IUserService));
             if (userService != null)
             {
+
                 try
                 {
+                    // Sử dụng .Result là 1 thuộc tính của Task giúp đồng bộ hóa luồng thực thi cho đến khi luồng bất đồng bộ hoàn thành và trả về dữ liệu 
                     var user = userService.GetUserProfile(userName).Result;
                     if (user != null)
                     {

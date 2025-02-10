@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentMngt.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,7 +11,17 @@ namespace StudentMngt.Domain.ApplicationServices.ScoreAS
     public class CreateScoreViewModel
     {
         [Required]
-        public Double Score { get; set; }
+        public Double ScoreValue { get; set; }
+
+        [Required]
+        public Guid UserId { get; set; }
+
+        [Required]
+        public Guid SubjectDetailId { get; set; }
+
+        [Required]
+        public TypeScore TypeScore { get; set; }
+
 
     }
 }

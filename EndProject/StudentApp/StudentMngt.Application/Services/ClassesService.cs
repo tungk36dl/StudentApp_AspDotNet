@@ -16,7 +16,15 @@ namespace StudentMngt.Application.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<Classes, Guid> _ClassesRepository;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly ILogger<Classes> _logger;
+        private readonly ILogger<ClassesService> _logger;
+
+        public ClassesService(IUnitOfWork unitOfWork, IGenericRepository<Classes, Guid> classesRepository, IHttpContextAccessor httpContextAccessor, ILogger<ClassesService> logger)
+        {
+            _unitOfWork = unitOfWork;
+            _ClassesRepository = classesRepository;
+            _httpContextAccessor = httpContextAccessor;
+            _logger = logger;
+        }
 
         public async Task<ResponseResult> CreateClasses(CreateClassesViewModel viewModel, UserProfileModel currentUser)
         {
@@ -25,6 +33,7 @@ namespace StudentMngt.Application.Services
                 Id = Guid.NewGuid(),
                 ClassName = viewModel.ClassesName,
                 MajorId = viewModel.MajorId,
+                Status = EntityStatus.Active,
                 CreatedBy = currentUser.UserId,
                 CreatedDate = DateTime.UtcNow,
             };

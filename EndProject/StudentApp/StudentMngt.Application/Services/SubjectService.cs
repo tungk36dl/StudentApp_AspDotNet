@@ -21,7 +21,15 @@ namespace StudentMngt.Application.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<Subject, Guid> _subjectRepository;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly ILogger<Subject> _logger;
+        private readonly ILogger<SubjectService> _logger;
+
+        public SubjectService(IUnitOfWork unitOfWork, IGenericRepository<Subject, Guid> subjectRepository, IHttpContextAccessor httpContextAccessor, ILogger<SubjectService> logger)
+        {
+            _unitOfWork = unitOfWork;
+            _subjectRepository = subjectRepository;
+            _httpContextAccessor = httpContextAccessor;
+            _logger = logger;
+        }
 
         public async Task<ResponseResult> CreateSubject(CreateSubjectViewModel viewModel, UserProfileModel currentUser)
         {
@@ -29,6 +37,8 @@ namespace StudentMngt.Application.Services
             {
                 Id = Guid.NewGuid(),
                 SubjectName = viewModel.SubjectName,
+                Status = EntityStatus.Active,
+
                 CreatedBy = currentUser.UserId,
                 CreatedDate = DateTime.UtcNow,
             };

@@ -12,10 +12,11 @@ namespace StudentMngt.Domain.Entities
     public class Cohort : DomainEntity<Guid>, IAuditTable
     {
         public String CohortName { get; set; }
-        public DateTime? CreatedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Guid? CreatedBy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime? UpdatedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Guid? UpdatedBy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public EntityStatus Status { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public DateTime? CreatedDate { get; set; }
+        public Guid? CreatedBy { get; set; }
+        public Guid? UpdatedBy { get; set; }
+        public DateTime? UpdatedDate { get; set; }
+        public EntityStatus Status { get; set; }
     }
 }

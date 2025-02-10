@@ -16,7 +16,15 @@ namespace StudentMngt.Application.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<Major, Guid> _MajorRepository;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly ILogger<Major> _logger;
+        private readonly ILogger<MajorService> _logger;
+
+        public MajorService(IUnitOfWork unitOfWork, IGenericRepository<Major, Guid> majorRepository, IHttpContextAccessor httpContextAccessor, ILogger<MajorService> logger)
+        {
+            _unitOfWork = unitOfWork;
+            _MajorRepository = majorRepository;
+            _httpContextAccessor = httpContextAccessor;
+            _logger = logger;
+        }
 
         public async Task<ResponseResult> CreateMajor(CreateMajorViewModel viewModel, UserProfileModel currentUser)
         {
@@ -24,6 +32,8 @@ namespace StudentMngt.Application.Services
             {
                 Id = Guid.NewGuid(),
                 MajorName = viewModel.MajorName,
+                Status = EntityStatus.Active,
+
                 CohortId = viewModel.CohortId,
                 CreatedBy = currentUser.UserId,
                 CreatedDate = DateTime.UtcNow,

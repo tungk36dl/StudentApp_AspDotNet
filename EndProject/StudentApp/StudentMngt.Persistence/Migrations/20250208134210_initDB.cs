@@ -49,8 +49,8 @@ namespace StudentMngt.Persistence.Migrations
                     CohortName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -67,13 +67,41 @@ namespace StudentMngt.Persistence.Migrations
                     CohortId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Majors", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Permissions",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Code = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Index = table.Column<int>(type: "int", nullable: false),
+                    ParentCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Permissions", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RolesPermissions",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    RoleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    PermissionCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RolesPermissions", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -83,12 +111,12 @@ namespace StudentMngt.Persistence.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     SubjectDetailId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Score = table.Column<double>(type: "float", nullable: false),
+                    ScoreValue = table.Column<double>(type: "float", nullable: false),
                     Semesters = table.Column<int>(type: "int", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -141,9 +169,9 @@ namespace StudentMngt.Persistence.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     IsSystemUser = table.Column<bool>(type: "bit", nullable: false),
                     Code = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ClassesId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -364,6 +392,12 @@ namespace StudentMngt.Persistence.Migrations
 
             migrationBuilder.DropTable(
                 name: "Majors");
+
+            migrationBuilder.DropTable(
+                name: "Permissions");
+
+            migrationBuilder.DropTable(
+                name: "RolesPermissions");
 
             migrationBuilder.DropTable(
                 name: "Scores");

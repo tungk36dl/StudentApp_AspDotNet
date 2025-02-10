@@ -163,7 +163,6 @@ namespace StudentMngt.Persistence.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid?>("ClassesId")
@@ -177,7 +176,7 @@ namespace StudentMngt.Persistence.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DateOfBirth")
+                    b.Property<DateTime?>("DateOfBirth")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -188,7 +187,6 @@ namespace StudentMngt.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsSystemUser")
@@ -338,7 +336,51 @@ namespace StudentMngt.Persistence.Migrations
                     b.ToTable("Majors");
                 });
 
-            modelBuilder.Entity("StudentMngt.Domain.Entities.Scores", b =>
+            modelBuilder.Entity("StudentMngt.Domain.Entities.Permission", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Index")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ParentCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Permissions");
+                });
+
+            modelBuilder.Entity("StudentMngt.Domain.Entities.RolePermission", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("PermissionCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RolesPermissions");
+                });
+
+            modelBuilder.Entity("StudentMngt.Domain.Entities.Score", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -350,7 +392,7 @@ namespace StudentMngt.Persistence.Migrations
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<double>("Score")
+                    b.Property<double>("ScoreValue")
                         .HasColumnType("float");
 
                     b.Property<int>("Semesters")

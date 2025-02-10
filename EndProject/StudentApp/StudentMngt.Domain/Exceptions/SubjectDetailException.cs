@@ -6,34 +6,34 @@ using System.Threading.Tasks;
 
 namespace StudentMngt.Domain.Exceptions
 {
-    public static class SubjectException
+    public static class SubjectDetailException
     {
-        public class SubjectNotFoundException : NotFoundException
+        public class SubjectDetailNotFoundException : NotFoundException
         {
-            public SubjectNotFoundException(Guid subjectId) : base($"The subject with the id {subjectId} was not found.")
+            public SubjectDetailNotFoundException(Guid subjectDetailId) : base($"The subject with the id {subjectDetailId} was not found.")
             {
 
             }
         }
-        public class CreateSubjectException : BadRequestException
+        public class CreatesubjectDetailException : BadRequestException
         {
-            public CreateSubjectException(String subjectName) : base($"Somthing when wrong when create subject {subjectName}")
-            {
-
-            }
-        }
-
-        public class UpdateSubjectException : BadRequestException
-        {
-            public UpdateSubjectException(Guid subjectId) : base($"Somthing when wrong when update subject with id {subjectId}")
+            public CreatesubjectDetailException(String subjectDetailName) : base($"Somthing when wrong when create subjectDetail {subjectDetailName}")
             {
 
             }
         }
 
-        public class DeleteSubjectException : BadRequestException
+        public class UpdatesubjectDetailException : BadRequestException
         {
-            public DeleteSubjectException(Guid subjectId) : base($"Something when wrong when delete subject with id {subjectId}")
+            public UpdatesubjectDetailException(Guid subjectDetailId) : base($"Somthing when wrong when update subjectDetail with id {subjectDetailId}")
+            {
+
+            }
+        }
+
+        public class DeletesubjectDetailException : BadRequestException
+        {
+            public DeletesubjectDetailException(Guid subjectDetailId) : base($"Something when wrong when delete subjectDetail with id {subjectDetailId}")
             {
             }
         }

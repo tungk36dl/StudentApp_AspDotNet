@@ -24,9 +24,9 @@ namespace StudentMngt.Application.Services
         private readonly IGenericRepository<Subject, Guid> _subjectRepository;
         private readonly UserManager<AppUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly ILogger<SubjectDetail> _logger;
+        private readonly ILogger<SubjectDetailService> _logger;
 
-        public SubjectDetailService(IUnitOfWork unitOfWork, IGenericRepository<SubjectDetail, Guid> subjectDetailRepository, UserManager<AppUser> userManager, IHttpContextAccessor httpContextAccessor, ILogger<SubjectDetail> logger)
+        public SubjectDetailService(IUnitOfWork unitOfWork, IGenericRepository<SubjectDetail, Guid> subjectDetailRepository, UserManager<AppUser> userManager, IHttpContextAccessor httpContextAccessor, ILogger<SubjectDetailService> logger)
         {
             _unitOfWork = unitOfWork;
             _subjectDetailRepository = subjectDetailRepository;
@@ -55,6 +55,7 @@ namespace StudentMngt.Application.Services
                 TeacherId = viewModel.TeacherId,
                 Teacher = Teacher,
                 Subject = Subject,
+                Status = EntityStatus.Active,
 
                 CreatedBy = currentUser.UserId,
                 CreatedDate = DateTime.UtcNow,

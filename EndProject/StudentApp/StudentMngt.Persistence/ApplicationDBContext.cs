@@ -22,11 +22,16 @@ namespace StudentMngt.Persistence
         }
 
         public DbSet<Subject> Subjects { get; set; }
-        public DbSet<Scores> Scores { get; set; }
+        public DbSet<Score> Scores { get; set; }
         public DbSet<SubjectDetail> SubjectDetails { get; set; }
         public DbSet<Classes> Classes { get; set; }
         public DbSet<Cohort> Cohorts { get; set; }
         public DbSet<Major> Majors { get; set; }
+
+        public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<AppRole> AppRoles { get; set; }
+        public DbSet<Permission> Permissions { get; set; }
+        public DbSet<RolePermission> RolesPermissions { get; set; }
 
     }
 }

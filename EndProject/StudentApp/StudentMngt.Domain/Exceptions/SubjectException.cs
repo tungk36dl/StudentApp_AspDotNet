@@ -6,34 +6,34 @@ using System.Threading.Tasks;
 
 namespace StudentMngt.Domain.Exceptions
 {
-    public static class SubjectDetailException
+    public static class SubjectException
     {
-        public class SubjectDetailNotFoundException : NotFoundException
+        public class SubjectNotFoundException : NotFoundException
         {
-            public SubjectDetailNotFoundException(Guid subjectDetailId) : base($"The subject with the id {subjectDetailId} was not found.")
+            public SubjectNotFoundException(Guid subjectId) : base($"The subject with the id {subjectId} was not found.")
             {
 
             }
         }
-        public class CreatesubjectDetailException : BadRequestException
+        public class CreateSubjectException : BadRequestException
         {
-            public CreatesubjectDetailException(String subjectDetailName) : base($"Somthing when wrong when create subjectDetail {subjectDetailName}")
-            {
-
-            }
-        }
-
-        public class UpdatesubjectDetailException : BadRequestException
-        {
-            public UpdatesubjectDetailException(Guid subjectDetailId) : base($"Somthing when wrong when update subjectDetail with id {subjectDetailId}")
+            public CreateSubjectException(String subjectName) : base($"Somthing when wrong when create subject {subjectName}")
             {
 
             }
         }
 
-        public class DeletesubjectDetailException : BadRequestException
+        public class UpdateSubjectException : BadRequestException
         {
-            public DeletesubjectDetailException(Guid subjectDetailId) : base($"Something when wrong when delete subjectDetail with id {subjectDetailId}")
+            public UpdateSubjectException(Guid subjectId) : base($"Somthing when wrong when update subject with id {subjectId}")
+            {
+
+            }
+        }
+
+        public class DeleteSubjectException : BadRequestException
+        {
+            public DeleteSubjectException(Guid subjectId) : base($"Something when wrong when delete subject with id {subjectId}")
             {
             }
         }

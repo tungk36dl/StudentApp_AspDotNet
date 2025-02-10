@@ -57,6 +57,12 @@ namespace StudentMngt.Domain.Utility
             public const string DELETE_CLASSES_PERMISSION = "DELETE_CLASSES_PERMISSION";
             public const string VIEW_CLASSES_PERMISSION = "VIEW_CLASSES_PERMISSION";
 
+            public const string SCORE_PERMISSION = "SCORE_PERMISSION";
+            public const string ADD_SCORE_PERMISSION = "ADD_SCORE_PERMISSION";
+            public const string UPDATE_SCORE_PERMISSION = "UPDATE_SCORE_PERMISSION";
+            public const string DELETE_SCORE_PERMISSION = "DELETE_SCORE_PERMISSION";
+            public const string VIEW_SCORE_PERMISSION = "VIEW_SCORE_PERMISSION";
+
 
             public const string IMAGE_PERMISSION = "IMAGE_PERMISSION";
             public const string ADD_IMAGE_PERMISSION = "ADD_IMAGE_PERMISSION";

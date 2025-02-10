@@ -76,6 +76,7 @@ namespace StudentMngt.Application.Services
                 UserId = user.Id,
                 UserName = user.UserName,
                 Email = user.Email,
+                Code = user.Code,
                 PhoneNumber = user.PhoneNumber
             };
 
@@ -142,6 +143,8 @@ namespace StudentMngt.Application.Services
             user.UserName = model.UserName;
             user.Email = model.Email;
             user.PhoneNumber = model.PhoneNumber;
+            user.Code = model.Code;
+            user.Address = model.Address;
             var result = await _userManager.UpdateAsync(user);
             if (result.Succeeded)
             {
@@ -187,6 +190,8 @@ namespace StudentMngt.Application.Services
                 UserName = model.UserName,
                 Email = model.Email,
                 PhoneNumber = model.PhoneNummber,
+                Code = model.Code,
+                Address = model.Address,
                 IsSystemUser = false
             };
 
@@ -215,6 +220,8 @@ namespace StudentMngt.Application.Services
                 UserName = model.UserName,
                 Email = model.Email,
                 PhoneNumber = model.PhoneNummber,
+                Code = model.Code,
+                Address = model.Address,
                 IsSystemUser = true
             };
 
@@ -314,6 +321,8 @@ namespace StudentMngt.Application.Services
                 UserId = s.Id,
                 Email = s.Email,
                 PhoneNumber = s.PhoneNumber,
+                Code = s.Code,
+                Address = s.Address,
                 UserName = s.UserName,
             }).ToListAsync();
             return result;
@@ -373,6 +382,8 @@ namespace StudentMngt.Application.Services
                 UserId = s.Id,
                 PhoneNumber = s.PhoneNumber,
                 UserName = s.UserName,
+                Code = s.Code,
+                Address = s.Address,
                 Email = s.Email
             }).ToList();
             var result = new RoleViewModel
@@ -401,6 +412,8 @@ namespace StudentMngt.Application.Services
                     {
                         UserName = userAdmin["UserName"],
                         Email = userAdmin["Email"],
+                        Address = userAdmin["Address"],
+                        Code = userAdmin["Code"],
                         IsSystemUser = true
                     };
 
@@ -426,6 +439,7 @@ namespace StudentMngt.Application.Services
 
                     var listPermissions = new List<Permission>
                     {
+                        // ROLE
                         new Permission()
                         {
                             Id = Guid.NewGuid(),
@@ -469,6 +483,8 @@ namespace StudentMngt.Application.Services
                             Index = 5
                         }
                         ,
+
+                        // USER
                         new Permission()
                         {
                             Id = Guid.NewGuid(),
@@ -516,7 +532,7 @@ namespace StudentMngt.Application.Services
                         ,
                      
 
-
+                        // IMAGE
                          new Permission()
                         {
                             Id = Guid.NewGuid(),
@@ -554,6 +570,258 @@ namespace StudentMngt.Application.Services
                             Code = CommonConstants.Permissions.DELETE_IMAGE_PERMISSION,
                             Name = CommonConstants.Permissions.DELETE_IMAGE_PERMISSION,
                             ParentCode = CommonConstants.Permissions.IMAGE_PERMISSION,
+                            Index = 5
+                        },
+
+
+
+                        // COHORT
+                         new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.COHORT_PERMISSION,
+                            Name = CommonConstants.Permissions.COHORT_PERMISSION,
+                            Index = 1
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.VIEW_COHORT_PERMISSION,
+                            Name = CommonConstants.Permissions.VIEW_COHORT_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.COHORT_PERMISSION,
+                            Index = 2
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.ADD_COHORT_PERMISSION,
+                            Name = CommonConstants.Permissions.ADD_COHORT_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.COHORT_PERMISSION,
+                            Index = 3
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.UPDATE_COHORT_PERMISSION,
+                            Name = CommonConstants.Permissions.UPDATE_COHORT_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.COHORT_PERMISSION,
+                            Index = 4
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.DELETE_COHORT_PERMISSION,
+                            Name = CommonConstants.Permissions.DELETE_COHORT_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.COHORT_PERMISSION,
+                            Index = 5
+                        },
+
+
+                        // MAJOR
+                         new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.MAJOR_PERMISSION,
+                            Name = CommonConstants.Permissions.MAJOR_PERMISSION,
+                            Index = 1
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.VIEW_MAJOR_PERMISSION,
+                            Name = CommonConstants.Permissions.VIEW_MAJOR_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.MAJOR_PERMISSION,
+                            Index = 2
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.ADD_MAJOR_PERMISSION,
+                            Name = CommonConstants.Permissions.ADD_MAJOR_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.MAJOR_PERMISSION,
+                            Index = 3
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.UPDATE_MAJOR_PERMISSION,
+                            Name = CommonConstants.Permissions.UPDATE_MAJOR_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.MAJOR_PERMISSION,
+                            Index = 4
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.DELETE_MAJOR_PERMISSION,
+                            Name = CommonConstants.Permissions.DELETE_MAJOR_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.MAJOR_PERMISSION,
+                            Index = 5
+                        },
+
+                        // CLASSES
+                         new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.CLASSES_PERMISSION,
+                            Name = CommonConstants.Permissions.CLASSES_PERMISSION,
+                            Index = 1
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.VIEW_CLASSES_PERMISSION,
+                            Name = CommonConstants.Permissions.VIEW_CLASSES_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.CLASSES_PERMISSION,
+                            Index = 2
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.ADD_CLASSES_PERMISSION,
+                            Name = CommonConstants.Permissions.ADD_CLASSES_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.CLASSES_PERMISSION,
+                            Index = 3
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.UPDATE_CLASSES_PERMISSION,
+                            Name = CommonConstants.Permissions.UPDATE_CLASSES_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.CLASSES_PERMISSION,
+                            Index = 4
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.DELETE_CLASSES_PERMISSION,
+                            Name = CommonConstants.Permissions.DELETE_CLASSES_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.CLASSES_PERMISSION,
+                            Index = 5
+                        },
+
+
+                        // SUBJECT
+                         new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.SUBJECT_PERMISSION,
+                            Name = CommonConstants.Permissions.SUBJECT_PERMISSION,
+                            Index = 1
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.VIEW_SUBJECT_PERMISSION,
+                            Name = CommonConstants.Permissions.VIEW_SUBJECT_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SUBJECT_PERMISSION,
+                            Index = 2
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.ADD_SUBJECT_PERMISSION,
+                            Name = CommonConstants.Permissions.ADD_SUBJECT_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SUBJECT_PERMISSION,
+                            Index = 3
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.UPDATE_SUBJECT_PERMISSION,
+                            Name = CommonConstants.Permissions.UPDATE_SUBJECT_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SUBJECT_PERMISSION,
+                            Index = 4
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.DELETE_SUBJECT_PERMISSION,
+                            Name = CommonConstants.Permissions.DELETE_SUBJECT_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SUBJECT_PERMISSION,
+                            Index = 5
+                        },
+
+
+                        // SUBJECT_DETAIL
+                         new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.SUBJECT_DETAIL_PERMISSION,
+                            Name = CommonConstants.Permissions.SUBJECT_DETAIL_PERMISSION,
+                            Index = 1
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.VIEW_SUBJECT_DETAIL_PERMISSION,
+                            Name = CommonConstants.Permissions.VIEW_SUBJECT_DETAIL_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SUBJECT_DETAIL_PERMISSION,
+                            Index = 2
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.ADD_SUBJECT_DETAIL_PERMISSION,
+                            Name = CommonConstants.Permissions.ADD_SUBJECT_DETAIL_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SUBJECT_DETAIL_PERMISSION,
+                            Index = 3
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.UPDATE_SUBJECT_DETAIL_PERMISSION,
+                            Name = CommonConstants.Permissions.UPDATE_SUBJECT_DETAIL_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SUBJECT_DETAIL_PERMISSION,
+                            Index = 4
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.DELETE_SUBJECT_DETAIL_PERMISSION,
+                            Name = CommonConstants.Permissions.DELETE_SUBJECT_DETAIL_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SUBJECT_DETAIL_PERMISSION,
+                            Index = 5
+                        },
+
+
+                        // SCORE
+                         new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.SCORE_PERMISSION,
+                            Name = CommonConstants.Permissions.SCORE_PERMISSION,
+                            Index = 1
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.VIEW_SCORE_PERMISSION,
+                            Name = CommonConstants.Permissions.VIEW_SCORE_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SCORE_PERMISSION,
+                            Index = 2
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.ADD_SCORE_PERMISSION,
+                            Name = CommonConstants.Permissions.ADD_SCORE_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SCORE_PERMISSION,
+                            Index = 3
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.UPDATE_SCORE_PERMISSION,
+                            Name = CommonConstants.Permissions.UPDATE_SCORE_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SCORE_PERMISSION,
+                            Index = 4
+                        },
+                        new Permission()
+                        {
+                            Id = Guid.NewGuid(),
+                            Code = CommonConstants.Permissions.DELETE_SCORE_PERMISSION,
+                            Name = CommonConstants.Permissions.DELETE_SCORE_PERMISSION,
+                            ParentCode = CommonConstants.Permissions.SCORE_PERMISSION,
                             Index = 5
                         }
                     };

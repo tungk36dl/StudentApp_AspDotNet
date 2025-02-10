@@ -15,7 +15,15 @@ namespace StudentMngt.Application.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<Cohort, Guid> _CohortRepository;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly ILogger<Cohort> _logger;
+        private readonly ILogger<CohortService> _logger;
+
+        public CohortService(IUnitOfWork unitOfWork, IGenericRepository<Cohort, Guid> cohortRepository, IHttpContextAccessor httpContextAccessor, ILogger<CohortService> logger)
+        {
+            _unitOfWork = unitOfWork;
+            _CohortRepository = cohortRepository;
+            _httpContextAccessor = httpContextAccessor;
+            _logger = logger;
+        }
 
         public async Task<ResponseResult> CreateCohort(CreateCohortViewModel viewModel, UserProfileModel currentUser)
         {
@@ -24,6 +32,7 @@ namespace StudentMngt.Application.Services
                 Id = Guid.NewGuid(),
                 CohortName = viewModel.CohortName,
                 CreatedBy = currentUser.UserId,
+                Status = EntityStatus.Active,
                 CreatedDate = DateTime.UtcNow,
             };
             try
