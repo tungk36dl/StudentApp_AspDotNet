@@ -22,56 +22,170 @@ namespace StudentMngt.Application.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<SubjectDetail, Guid> _subjectDetailRepository;
         private readonly IGenericRepository<Subject, Guid> _subjectRepository;
+        private readonly IGenericRepository<Classes, Guid> _classesRepository;
+        private readonly IGenericRepository<Score, Guid> _scoreRepository;
+        private readonly IUserService _userService;
         private readonly UserManager<AppUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly ILogger<SubjectDetailService> _logger;
 
-        public SubjectDetailService(IUnitOfWork unitOfWork, IGenericRepository<SubjectDetail, Guid> subjectDetailRepository, UserManager<AppUser> userManager, IHttpContextAccessor httpContextAccessor, ILogger<SubjectDetailService> logger)
+        public SubjectDetailService(IUnitOfWork unitOfWork, IGenericRepository<SubjectDetail, Guid> subjectDetailRepository, IGenericRepository<Subject, Guid> subjectRepository, IGenericRepository<Classes, Guid> classesRepository, IGenericRepository<Score, Guid> scoreRepository, IUserService userService, UserManager<AppUser> userManager, IHttpContextAccessor httpContextAccessor, ILogger<SubjectDetailService> logger)
         {
             _unitOfWork = unitOfWork;
             _subjectDetailRepository = subjectDetailRepository;
+            _subjectRepository = subjectRepository;
+            _classesRepository = classesRepository;
+            _scoreRepository = scoreRepository;
+            _userService = userService;
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
             _logger = logger;
         }
 
+
+
+
+
+        //public async Task<ResponseResult> CreateSubjectDetail(CreateSubjectDetailViewModel viewModel, UserProfileModel currentUser)
+        //{
+        //    var Teacher = await _userManager.Users.FirstOrDefaultAsync(s => s.Id == viewModel.TeacherId);
+        //    var Subject = await _subjectRepository.FindByIdAsync(viewModel.SubjectId);
+        //    if (Teacher == null || Subject == null)
+        //    {
+        //        throw new SubjectDetailException.SubjectDetailNotFoundException(viewModel.SubjectId);
+        //    }
+
+        //    var subjectDetail = new SubjectDetail()
+        //    {
+        //        Id = Guid.NewGuid(),
+        //        Credits = viewModel.Credits,
+        //        SubjectId = viewModel.SubjectId,
+        //        TeacherId = viewModel.TeacherId,
+        //        Teacher = Teacher,
+        //        Subject = Subject,
+        //        Status = EntityStatus.Active,
+        //        ClassId = viewModel.ClassesId,
+        //        CreatedBy = currentUser.UserId,
+        //        CreatedDate = DateTime.UtcNow,
+        //    };
+
+        //    try
+        //    {
+        //        // Thêm subject detail vào database
+        //        _subjectDetailRepository.Add(subjectDetail);
+        //        _logger.LogDebug("Add SubjectDetail ....");
+        //        await _unitOfWork.SaveChangesAsync();
+
+        //        // Lấy danh sách sinh viên theo classId
+        //        var students = await _userService.GetListUserByClassId(viewModel.ClassesId);
+
+        //        if (students.Any())
+        //        {
+        //            var scores = students.Select(student => new Score
+        //            {
+        //                Id = Guid.NewGuid(),
+        //                UserId = student.UserId,
+        //                SubjectDetailId = subjectDetail.Id,
+        //                AttendanceScore = null,
+        //                TestScore = null,
+        //                FinalScore = null,
+        //                GPA = null,
+        //                LetterGrades = null,
+        //                Status = EntityStatus.Active,
+        //                CreatedBy = currentUser.UserId,
+        //                CreatedDate = DateTime.UtcNow
+        //            }).ToList();
+
+        //            _scoreRepository.AddRange(scores);
+        //            await _unitOfWork.SaveChangesAsync();
+        //        }else
+        //        {
+        //            throw new Exception($"Lớp có id: {viewModel.ClassesId} không có sinh viên");
+        //        }
+
+        //        return ResponseResult.Success($"Tạo môn học {subjectDetail.SubjectId} thành công và tự động thêm điểm rỗng cho sinh viên!");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _logger.LogError(ex.Message, ex);
+        //        throw new SubjectDetailException.CreatesubjectDetailException(viewModel.SubjectId.ToString());
+        //    }
+        //}
+
+
         public async Task<ResponseResult> CreateSubjectDetail(CreateSubjectDetailViewModel viewModel, UserProfileModel currentUser)
         {
-            if(viewModel.SubjectId == null || viewModel.TeacherId == null)
-            {
-
-            }
             var Teacher = await _userManager.Users.FirstOrDefaultAsync(s => s.Id == viewModel.TeacherId);
             var Subject = await _subjectRepository.FindByIdAsync(viewModel.SubjectId);
             if (Teacher == null || Subject == null)
             {
                 throw new SubjectDetailException.SubjectDetailNotFoundException(viewModel.SubjectId);
             }
-            var subjectDetail = new SubjectDetail()
-            {
-                Id = Guid.NewGuid(),
-                Credits = viewModel.Credits,
-                SubjectId = viewModel.SubjectId,
-                TeacherId = viewModel.TeacherId,
-                Teacher = Teacher,
-                Subject = Subject,
-                Status = EntityStatus.Active,
 
-                CreatedBy = currentUser.UserId,
-                CreatedDate = DateTime.UtcNow,
-            };
-            try
+            // Lấy danh sách sinh viên theo classId trước khi tạo SubjectDetail
+            var students = await _userService.GetListUserByClassId(viewModel.ClassesId);
+            if (!students.Any())
             {
-                _subjectDetailRepository.Add(subjectDetail);
-                await _unitOfWork.SaveChangesAsync();
-                return ResponseResult.Success($"Create subjectDetail {subjectDetail.SubjectId} successfully");
+                throw new Exception($"Lớp có id: {viewModel.ClassesId} không có sinh viên");
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex.Message, ex);
-                throw new SubjectDetailException.CreatesubjectDetailException(viewModel.SubjectId.ToString());
-            }
+
+            // Bắt đầu transaction để đảm bảo toàn bộ quá trình thành công hoặc rollback nếu lỗi
+   
+                try
+                {
+                    await _unitOfWork.BeginTransactionAsync();
+                    var subjectDetail = new SubjectDetail()
+                    {
+                        Id = Guid.NewGuid(),
+                        Credits = viewModel.Credits,
+                        SubjectId = viewModel.SubjectId,
+                        TeacherId = viewModel.TeacherId,
+                        Teacher = Teacher,
+                        Subject = Subject,
+                        Status = EntityStatus.Active,
+                        ClassId = viewModel.ClassesId,
+                        CreatedBy = currentUser.UserId,
+                        CreatedDate = DateTime.UtcNow,
+                    };
+
+                    _subjectDetailRepository.Add(subjectDetail);
+                    _logger.LogDebug("Add SubjectDetail ....");
+                    await _unitOfWork.SaveChangesAsync();
+
+                    var scores = students.Select(student => new Score
+                    {
+                        Id = Guid.NewGuid(),
+                        UserId = student.UserId,
+                        SubjectDetailId = subjectDetail.Id,
+                        AttendanceScore = null,
+                        TestScore = null,
+                        FinalScore = null,
+                        GPA = null,
+                        LetterGrades = null,
+                        Status = EntityStatus.Active,
+                        CreatedBy = currentUser.UserId,
+                        CreatedDate = DateTime.UtcNow
+                    }).ToList();
+
+                    _scoreRepository.AddRange(scores);
+                    await _unitOfWork.SaveChangesAsync();
+
+                    // Commit transaction nếu tất cả thao tác thành công
+                    await _unitOfWork.CommitAsync();
+
+                    return ResponseResult.Success($"Tạo môn học {subjectDetail.SubjectId} thành công và tự động thêm điểm rỗng cho sinh viên!");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex.Message, ex);
+
+                    // Rollback nếu có lỗi
+                    await _unitOfWork.RollbackAsync();
+                    throw new SubjectDetailException.CreatesubjectDetailException(viewModel.SubjectId.ToString());
+                }
+       
         }
+
 
         public async Task<ResponseResult> DeleteSubjectDetail(Guid subjectDetailId)
         {
@@ -100,15 +214,20 @@ namespace StudentMngt.Application.Services
             {
                 throw new SubjectDetailException.SubjectDetailNotFoundException(subjectDetailId);
             }
+            var classes = await _classesRepository.FindByIdAsync(subjectDetail.ClassId);
+            if (classes == null)
+            {
+                throw new ClassesException.ClassesNotFoundException(subjectDetail.ClassId);
+            }
            
             var result = new SubjectDetailViewModel()
             {
                 SubjectDetailId = subjectDetailId,
                 Credits = subjectDetail.Credits,
-
                 TeacherName = subjectDetail.Teacher.FullName,
-                SubjectName = subjectDetail.Subject.SubjectName
-                
+                SubjectName = subjectDetail.Subject.SubjectName,
+                ClassName = classes.ClassName
+
             };
             return result;
         }

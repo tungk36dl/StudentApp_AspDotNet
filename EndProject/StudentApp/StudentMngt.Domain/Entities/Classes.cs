@@ -16,6 +16,8 @@ namespace StudentMngt.Domain.Entities
 
         public Guid MajorId { get; set; }
 
+        public Guid CohortId { get; set; }
+
         public ICollection<AppUser> Students { get; set; }
         public DateTime? CreatedDate { get; set; }
         public Guid? CreatedBy { get; set; }

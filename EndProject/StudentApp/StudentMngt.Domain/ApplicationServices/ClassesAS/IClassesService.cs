@@ -8,6 +8,7 @@ namespace StudentMngt.Domain.ApplicationServices.ClassesAS
         Task<ResponseResult> UpdateClasses(UpdateClassesViewModel viewModel, UserProfileModel currentUser);
         Task<ResponseResult> DeleteClasses(Guid ClassesId);
         Task<PageResult<ClassesViewModel>> GetClassess(ClassesSearchQuery query);
+        Task<List<ClassesViewModel>> GetAllClasses();
         Task<ClassesViewModel> GetClassesById(Guid ClassesId);
         Task<ResponseResult> UpdateStatus(UpdateStatusViewModel model);
     }

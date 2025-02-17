@@ -12,6 +12,7 @@ namespace StudentMngt.Domain.ApplicationServices.ClassesAS
         public Guid Id { get; set; }
         public String ClassesName { get; set; } 
         public Guid MajorId     { get; set; }
+        public Guid CohortId { get; set; }
         public EntityStatus Status { get; set; }
     }
 }

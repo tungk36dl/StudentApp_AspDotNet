@@ -14,6 +14,8 @@ namespace StudentMngt.Domain.Entities
         public string Code { get; set; }
 
         public string? FullName { get; set; }
+
+        public Guid? ClassesId { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public string? Address { get; set; }
     }

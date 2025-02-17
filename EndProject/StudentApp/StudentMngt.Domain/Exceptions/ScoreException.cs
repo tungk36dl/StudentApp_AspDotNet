@@ -37,5 +37,18 @@ namespace StudentMngt.Domain.Exceptions
             {
             }
         }
+
+        public class CreateListScoreException : BadRequestException
+        {
+            public CreateListScoreException() : base($"Something when wrong when create list score")
+            {
+            }
+        }
+
+        public class HandleScoreException : BadRequestException
+        {
+            public HandleScoreException(string message)
+                : base(message) { }
+        }
     }
 }

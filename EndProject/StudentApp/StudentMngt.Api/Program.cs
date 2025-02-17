@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Serilog;
 using StudentMngt.Api;
 using StudentMngt.Application;
@@ -7,6 +7,19 @@ using StudentMngt.Infrastructure;
 using StudentMngt.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// cho phép yêu cầu từ frontend
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:3000") // Thay đổi URL frontend nếu cần
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()
+                  .AllowCredentials(); // Nếu dùng cookie/token
+        });
+});
 Log.Logger = new LoggerConfiguration().ReadFrom
     .Configuration(builder.Configuration)
     .CreateLogger();
@@ -42,6 +55,7 @@ builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
+app.UseCors("AllowAllOrigins");
 app.UseExceptionHandlingMiddleware();
 
 // Configure the HTTP request pipeline.

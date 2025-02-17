@@ -10,17 +10,14 @@ namespace StudentMngt.Domain.ApplicationServices.ScoreAS
 {
     public class CreateScoreViewModel
     {
-        [Required]
-        public Double ScoreValue { get; set; }
+        public Double AttendanceScore { get; set; }
+        public Double? TestScore { get; set; }
 
         [Required]
         public Guid UserId { get; set; }
 
         [Required]
         public Guid SubjectDetailId { get; set; }
-
-        [Required]
-        public TypeScore TypeScore { get; set; }
 
 
     }

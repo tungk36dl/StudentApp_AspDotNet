@@ -16,6 +16,7 @@ namespace StudentMngt.Domain.ApplicationServices.SubjectDetailAS
         public Subject Subject { get; set; }
         public AppUser Teacher { get; set; }
         public String TeacherName { get; set; }
+        public String ClassName { get; set; }
 
         public EntityStatus Status { get; set; }
 

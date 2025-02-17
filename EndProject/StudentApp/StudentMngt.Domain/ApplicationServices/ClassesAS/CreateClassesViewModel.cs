@@ -9,5 +9,8 @@ namespace StudentMngt.Domain.ApplicationServices.ClassesAS
 
         [Required]
         public Guid MajorId { get; set; }
+
+        [Required]
+        public Guid CohortId { get; set; }
     }
 }

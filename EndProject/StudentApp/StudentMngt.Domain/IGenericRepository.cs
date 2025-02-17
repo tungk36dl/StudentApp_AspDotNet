@@ -23,5 +23,6 @@ namespace StudentMngt.Domain
         void Remove(TEntity entity);
 
         void RemoveMultiple(List<TEntity> entities);
+
     }
 }

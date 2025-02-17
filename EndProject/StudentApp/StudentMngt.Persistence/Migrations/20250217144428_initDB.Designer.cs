@@ -12,7 +12,7 @@ using StudentMngt.Persistence;
 namespace StudentMngt.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20250208134210_initDB")]
+    [Migration("20250217144428_initDB")]
     partial class initDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -252,6 +252,9 @@ namespace StudentMngt.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(1000)");
 
+                    b.Property<Guid>("CohortId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid?>("CreatedBy")
                         .HasColumnType("uniqueidentifier");
 
@@ -309,9 +312,6 @@ namespace StudentMngt.Persistence.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CohortId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("CreatedBy")
@@ -388,16 +388,22 @@ namespace StudentMngt.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<double?>("AttendanceScore")
+                        .HasColumnType("float");
+
                     b.Property<Guid?>("CreatedBy")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<double>("ScoreValue")
+                    b.Property<double?>("FinalScore")
                         .HasColumnType("float");
 
-                    b.Property<int>("Semesters")
+                    b.Property<double?>("GPA")
+                        .HasColumnType("float");
+
+                    b.Property<int?>("LetterGrades")
                         .HasColumnType("int");
 
                     b.Property<int>("Status")
@@ -405,6 +411,9 @@ namespace StudentMngt.Persistence.Migrations
 
                     b.Property<Guid>("SubjectDetailId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<double?>("TestScore")
+                        .HasColumnType("float");
 
                     b.Property<Guid?>("UpdatedBy")
                         .HasColumnType("uniqueidentifier");

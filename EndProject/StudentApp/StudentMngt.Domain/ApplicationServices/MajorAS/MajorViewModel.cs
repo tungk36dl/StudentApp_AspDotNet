@@ -11,7 +11,6 @@ namespace StudentMngt.Domain.ApplicationServices.MajorAS
     {
         public Guid Id { get; set; }
         public String MajorName { get; set; } 
-        public Guid CohortId { get; set; }
         public EntityStatus Status { get; set; }
     }
 }

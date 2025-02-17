@@ -34,7 +34,6 @@ namespace StudentMngt.Application.Services
                 MajorName = viewModel.MajorName,
                 Status = EntityStatus.Active,
 
-                CohortId = viewModel.CohortId,
                 CreatedBy = currentUser.UserId,
                 CreatedDate = DateTime.UtcNow,
             };
@@ -82,7 +81,6 @@ namespace StudentMngt.Application.Services
             {
                 Id = major.Id,
                 MajorName = major.MajorName,
-                CohortId = major.CohortId,
                 Status = major.Status,
             };
             return result;
@@ -111,7 +109,6 @@ namespace StudentMngt.Application.Services
                 {
                     Id = s.Id,
                     MajorName = s.MajorName,
-                    CohortId = s.CohortId,
                     Status = s.Status
                 }).ToListAsync();
 
@@ -149,7 +146,6 @@ namespace StudentMngt.Application.Services
             }
 
             marjor.MajorName = model.MajorName;
-            marjor.CohortId = model.CohortId;
 
             try
             {

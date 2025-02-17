@@ -11,5 +11,6 @@ namespace StudentMngt.Domain.ApplicationServices.SubjectDetailAS
         public int Credits { get; set; }
         public Guid SubjectId { get; set; }
         public Guid TeacherId { get; set; }
+        public Guid ClassesId { get; set; }
     }
 }

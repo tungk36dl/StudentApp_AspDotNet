@@ -12,7 +12,6 @@ namespace StudentMngt.Domain.Entities
     public class Major : DomainEntity<Guid>, IAuditTable
     {
         public String MajorName { get; set; }
-        public Guid CohortId { get; set; }
         public DateTime? CreatedDate { get; set; }
         public Guid? CreatedBy { get; set; }
         public Guid? UpdatedBy { get; set; }

@@ -8,10 +8,14 @@
         Task<bool> InitializeUserAdminAsync();
         Task<ResponseResult> UpdateUserInfo(UpdateUserInfoViewModel model, UserProfileModel currentUser);
         Task<ResponseResult> ChangePassword(ChangePasswordViewModel model, UserProfileModel currentUser);
+
+        Task<List<UserViewModel>> GetListUserByClassId(Guid ClassesId);
+
         #endregion
 
         #region Customers
         Task<ResponseResult> RegisterCustomer(RegisterUserViewModel model);
+        Task<IList<String>> GetRolesByUser(String userName);
         #endregion
 
         #region SystemUsers
@@ -27,6 +31,8 @@
         Task<PageResult<RoleViewModel>> GetRoles(RoleSearchQuery query);
 
         Task<RoleViewModel> GetRoleDetail(Guid roleId);
+
+        Task<ResponseResult> CreateRole(CreateRoleViewModel model);
 
         #endregion
     }

@@ -46,5 +46,7 @@ namespace StudentMngt.Api.Base
                 return currentUser ?? new UserProfileModel();
             }
         }
+
+     
     }
 }

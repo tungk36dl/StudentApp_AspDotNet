@@ -18,27 +18,30 @@ namespace StudentMngt.Application.Services
         private readonly RoleManager<AppRole> _roleManager;
         private readonly IGenericRepository<Permission, Guid> _permissionRepository;
         private readonly IGenericRepository<RolePermission, Guid> _rolePermissionRepository;
+        private readonly IGenericRepository<Classes, Guid> _classesRepository;
+
         private readonly IJwtTokenService _tokenService;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _configuration;
 
-
-        public UserService(UserManager<AppUser> userManager,
-            RoleManager<AppRole> roleManager,
-            IGenericRepository<Permission, Guid> permissionRepository,
-            IJwtTokenService tokenService, IGenericRepository<RolePermission, Guid> rolePermissionRepository, IUnitOfWork unitOfWork, IConfiguration configuration)
+        public UserService(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, IGenericRepository<Permission, Guid> permissionRepository, IGenericRepository<RolePermission, Guid> rolePermissionRepository, IGenericRepository<Classes, Guid> classesRepository, IJwtTokenService tokenService, IUnitOfWork unitOfWork, IConfiguration configuration)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _permissionRepository = permissionRepository;
-            _tokenService = tokenService;
             _rolePermissionRepository = rolePermissionRepository;
+            _classesRepository = classesRepository;
+            _tokenService = tokenService;
             _unitOfWork = unitOfWork;
             _configuration = configuration;
         }
 
 
+
+
+
         #region Common
+        // Đăng nhập
         public async Task<AuthorizedResponseModel> Login(LoginViewModel model)
         {
             var user = await _userManager.FindByEmailAsync(model.Email);
@@ -63,6 +66,7 @@ namespace StudentMngt.Application.Services
 
         }
 
+        // Lấy thông tin user
         public async Task<UserProfileModel> GetUserProfile(string userName)
         {
 
@@ -132,6 +136,8 @@ namespace StudentMngt.Application.Services
             return result;
         }
 
+
+        // Cập nhật thông tin user
         public async Task<ResponseResult> UpdateUserInfo(UpdateUserInfoViewModel model, UserProfileModel currentUser)
         {
             var user = await _userManager.Users.FirstOrDefaultAsync(s => s.Id == currentUser.UserId);
@@ -157,6 +163,7 @@ namespace StudentMngt.Application.Services
             }
         }
 
+        // Thay đổi password cho user
         public async Task<ResponseResult> ChangePassword(ChangePasswordViewModel model, UserProfileModel currentUser)
         {
             var user = await _userManager.Users.FirstOrDefaultAsync(s=> s.Id == currentUser.UserId);
@@ -183,6 +190,7 @@ namespace StudentMngt.Application.Services
 
         #region Customers
 
+        // Đăng kí 1 user
         public async Task<ResponseResult> RegisterCustomer(RegisterUserViewModel model)
         {
             var user = new AppUser()
@@ -192,6 +200,7 @@ namespace StudentMngt.Application.Services
                 PhoneNumber = model.PhoneNummber,
                 Code = model.Code,
                 Address = model.Address,
+                ClassesId = model.ClassesId,
                 IsSystemUser = false
             };
 
@@ -213,6 +222,7 @@ namespace StudentMngt.Application.Services
         #endregion
 
         #region  System_Users
+        // Đăng kí 1 user hệ thống
         public async Task<ResponseResult> RegisterSystemUser(RegisterUserViewModel model)
         {
             var user = new AppUser()
@@ -237,6 +247,29 @@ namespace StudentMngt.Application.Services
             }
         }
 
+        // Đăng kí role 
+        public async Task<ResponseResult> CreateRole(CreateRoleViewModel model)
+        {
+            var role = new AppRole()
+            {
+                Name = model.RoleName,
+                NormalizedName = model.RoleName.ToUpper(),
+            };
+            var result = await _roleManager.CreateAsync(role);
+            if (result.Succeeded)
+            {
+                return ResponseResult.Success();
+            }
+            else
+            {
+                var errors = JsonConvert.SerializeObject(result.Errors);
+                throw new UserException.HandleUserException(errors);
+            }
+
+        }
+
+
+        // Add role cho user
         public async Task<ResponseResult> AssignRoles(AssignRolesViewModel model)
         {
             var user = await _userManager.FindByNameAsync(model.UserName);
@@ -254,6 +287,8 @@ namespace StudentMngt.Application.Services
             throw new UserException.HandleUserException(errors);
         }
 
+
+        // Xóa role cho user
         public async Task<ResponseResult> RemoveRoles(RemoveRolesViewModel model)
         {
             var user = await _userManager.FindByNameAsync(model.UserName);
@@ -271,6 +306,38 @@ namespace StudentMngt.Application.Services
             throw new UserException.HandleUserException(errors);
         }
 
+
+        // Lấy role từ userID 
+        public async Task<IList<string>> GetRolesByUser(string userName)
+        {
+            if (string.IsNullOrEmpty(userName))
+            {
+                throw new ArgumentNullException(nameof(userName));
+            }
+
+            try
+            {
+                var user = await _userManager.FindByNameAsync(userName);
+                if (user == null)
+                {
+                    throw new UserException.UserNotFoundException();
+                }
+
+                var roles = await _userManager.GetRolesAsync(user);
+                return roles; // GetRolesAsync trả về IList<string> nên không cần convert
+            }
+            catch (UserException.UserNotFoundException)
+            {
+                throw; // Rethrow user not found exception
+            }
+            catch (Exception ex)
+            {
+                // Log exception here if needed
+                throw new Exception("Error getting user roles", ex);
+            }
+        }
+
+        // Đăng kí lại quyền cho role
         public async Task<ResponseResult> AssignPermissions(AssignPermissionsViewModel model)
 
         {
@@ -305,6 +372,7 @@ namespace StudentMngt.Application.Services
             }
         }
 
+        // Lấy thông tin danh sách user
         public async Task<PageResult<UserViewModel>> GetUsers(UserSearchQuery query)
         {
             var result = new PageResult<UserViewModel>() { CurrentPage = query.PageIndex };
@@ -322,12 +390,40 @@ namespace StudentMngt.Application.Services
                 Email = s.Email,
                 PhoneNumber = s.PhoneNumber,
                 Code = s.Code,
-                Address = s.Address,
+                Address = s.Address ?? "",
                 UserName = s.UserName,
             }).ToListAsync();
             return result;
         }
 
+        // Lấy list user theo classes ID
+        public async Task<List<UserViewModel>> GetListUserByClassId(Guid ClassesId)
+        {
+            if(ClassesId == Guid.Empty)
+            {
+                throw new UserException.HandleUserException("ClassID null!!!");
+            }
+            var classes = await _classesRepository.FindByIdAsync(ClassesId);
+            if (classes == null)
+            {
+                throw new ClassesException.ClassesNotFoundException(ClassesId);
+            }
+            var students = _userManager.Users.Where(s => s.ClassesId == ClassesId);
+            var result = await students.Select(s => new UserViewModel
+            {
+                UserId = s.Id,
+                Email = s.Email,
+                PhoneNumber = s.PhoneNumber,
+                Code = s.Code,
+                ClassName = classes.ClassName,
+                Address = s.Address ?? "",
+                UserName = s.UserName,
+            }).ToListAsync();
+            return  result;
+        }
+
+
+        // Lấy danh sách role
         public async Task<PageResult<RoleViewModel>> GetRoles(RoleSearchQuery query)
         {
             var result = new PageResult<RoleViewModel>() { CurrentPage = query.PageIndex };
@@ -346,6 +442,7 @@ namespace StudentMngt.Application.Services
                  }).ToListAsync();
             return result;
         }
+
 
         public async Task<RoleViewModel> GetRoleDetail(Guid roleId)
         {
@@ -383,7 +480,7 @@ namespace StudentMngt.Application.Services
                 PhoneNumber = s.PhoneNumber,
                 UserName = s.UserName,
                 Code = s.Code,
-                Address = s.Address,
+                Address = s.Address ?? "",
                 Email = s.Email
             }).ToList();
             var result = new RoleViewModel
@@ -864,6 +961,8 @@ namespace StudentMngt.Application.Services
 
             return false;
         }
+
+
         #endregion
     }
 }

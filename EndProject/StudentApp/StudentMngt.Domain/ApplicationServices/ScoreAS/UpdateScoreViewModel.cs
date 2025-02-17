@@ -9,8 +9,14 @@ namespace StudentMngt.Domain.ApplicationServices.ScoreAS
 {
     public class UpdateScoreViewModel
     {
+        public Double AttendanceScore { get; set; }
+        public Double TestScore { get; set; }
+
         [Required]
-        public Double ScoreValue { get; set; }
+        public Guid UserId { get; set; }
+
+        [Required]
+        public Guid SubjectDetailId { get; set; }
 
         [Required]
         public Guid Id { get; set; }

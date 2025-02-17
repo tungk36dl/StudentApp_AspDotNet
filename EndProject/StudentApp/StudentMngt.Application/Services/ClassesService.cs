@@ -14,14 +14,14 @@ namespace StudentMngt.Application.Services
     {
         // private readonly IClassesService _ClassesService;
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IGenericRepository<Classes, Guid> _ClassesRepository;
+        private readonly IGenericRepository<Classes, Guid> _classesRepository;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly ILogger<ClassesService> _logger;
 
         public ClassesService(IUnitOfWork unitOfWork, IGenericRepository<Classes, Guid> classesRepository, IHttpContextAccessor httpContextAccessor, ILogger<ClassesService> logger)
         {
             _unitOfWork = unitOfWork;
-            _ClassesRepository = classesRepository;
+            _classesRepository = classesRepository;
             _httpContextAccessor = httpContextAccessor;
             _logger = logger;
         }
@@ -33,13 +33,15 @@ namespace StudentMngt.Application.Services
                 Id = Guid.NewGuid(),
                 ClassName = viewModel.ClassesName,
                 MajorId = viewModel.MajorId,
+                CohortId = viewModel.CohortId,
+
                 Status = EntityStatus.Active,
                 CreatedBy = currentUser.UserId,
                 CreatedDate = DateTime.UtcNow,
             };
             try
             {
-                _ClassesRepository.Add(classes);
+                _classesRepository.Add(classes);
                 await _unitOfWork.SaveChangesAsync();
                 return ResponseResult.Success($"Create Classes {classes.ClassName} successfully");
             }
@@ -52,14 +54,14 @@ namespace StudentMngt.Application.Services
 
         public async Task<ResponseResult> DeleteClasses(Guid classesId)
         {
-            var classes = await _ClassesRepository.FindByIdAsync(classesId);
+            var classes = await _classesRepository.FindByIdAsync(classesId);
             if (classes == null)
             {
                 throw new ClassesException.ClassesNotFoundException(classesId);
             }
             try
             {
-                _ClassesRepository.Remove(classes);
+                _classesRepository.Remove(classes);
                 await _unitOfWork.SaveChangesAsync();
                 return ResponseResult.Success($"Delete Classes with id {classesId} successfully.");
             }
@@ -72,7 +74,7 @@ namespace StudentMngt.Application.Services
 
         public async Task<ClassesViewModel> GetClassesById(Guid classesId)
         {
-            var classes = await _ClassesRepository.FindByIdAsync(classesId);
+            var classes = await _classesRepository.FindByIdAsync(classesId);
             if (classes == null)
             {
                 throw new ClassesException.ClassesNotFoundException(classesId);
@@ -82,6 +84,8 @@ namespace StudentMngt.Application.Services
                 Id = classes.Id,
                 ClassesName = classes.ClassName,
                 MajorId = classes.MajorId,
+                CohortId = classes.CohortId,
+
                 Status = classes.Status,
             };
             return result;
@@ -93,7 +97,7 @@ namespace StudentMngt.Application.Services
             {
                 CurrentPage = query.PageIndex
             };
-            var classesQuery = _ClassesRepository.FindAll();
+            var classesQuery = _classesRepository.FindAll();
             // Chỉ hiển thị các Classes đang active
             if (query.DisplayActiveItem)
             {
@@ -111,6 +115,7 @@ namespace StudentMngt.Application.Services
                     Id = s.Id,
                     ClassesName = s.ClassName,
                     MajorId = s.MajorId,
+                    CohortId = s.CohortId,
                     Status = s.Status
                 }).ToListAsync();
 
@@ -120,7 +125,7 @@ namespace StudentMngt.Application.Services
 
         public async Task<ResponseResult> UpdateStatus(UpdateStatusViewModel model)
         {
-            var item = await _ClassesRepository.FindByIdAsync(model.Id);
+            var item = await _classesRepository.FindByIdAsync(model.Id);
             if (item == null)
             {
                 throw new ClassesException.ClassesNotFoundException(model.Id);
@@ -128,7 +133,7 @@ namespace StudentMngt.Application.Services
             item.Status = model.Status;
             try
             {
-                _ClassesRepository.Update(item);
+                _classesRepository.Update(item);
                 await _unitOfWork.SaveChangesAsync();
                 return ResponseResult.Success($"Update status Classes with id {model.Id} successfully.");
             }
@@ -141,7 +146,7 @@ namespace StudentMngt.Application.Services
 
         public async Task<ResponseResult> UpdateClasses(UpdateClassesViewModel model, UserProfileModel currentUser)
         {
-            var classes = await _ClassesRepository.FindByIdAsync(model.Id);
+            var classes = await _classesRepository.FindByIdAsync(model.Id);
             if (classes == null)
             {
                 throw new ClassesException.UpdateClassesException(model.Id);
@@ -149,9 +154,10 @@ namespace StudentMngt.Application.Services
 
             classes.ClassName = model.ClassesName;
             classes.MajorId = model.MajorId;
+            classes.CohortId = model.CohortId;
             try
             {
-                _ClassesRepository.Update(classes);
+                _classesRepository.Update(classes);
                 await _unitOfWork.SaveChangesAsync();
                 return ResponseResult.Success($"Update Classes with id {model.Id} successfully.");
             }
@@ -161,5 +167,22 @@ namespace StudentMngt.Application.Services
                 throw new ClassesException.UpdateClassesException(model.Id);
             }
         }
+
+        public async Task<List<ClassesViewModel>> GetAllClasses()
+        {
+            var classes = _classesRepository.FindAll();
+            if (!classes.Any())
+            {
+                return new List<ClassesViewModel>();
+            }
+            return classes.Select(s => new ClassesViewModel
+            {
+                Id = s.Id,
+                ClassesName = s.ClassName
+            }).ToList();
+
+        }
+
+
     }
 }

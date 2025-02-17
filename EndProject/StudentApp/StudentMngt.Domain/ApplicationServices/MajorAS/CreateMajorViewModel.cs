@@ -12,7 +12,5 @@ namespace StudentMngt.Domain.ApplicationServices.MajorAS
         [Required]
         public String MajorName { get; set; }
 
-        [Required]
-        public Guid CohortId { get; set; }
     }
 }

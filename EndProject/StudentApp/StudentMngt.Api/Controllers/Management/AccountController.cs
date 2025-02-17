@@ -72,7 +72,7 @@ namespace StudentMngt.Api.Controllers.Management
         }
 
         [Permission(CommonConstants.Permissions.VIEW_USER_PERMISSION)]
-        [HttpPost]
+        [HttpGet]
         [Route("get-users")]
         public async Task<PageResult<UserViewModel>> GetUsers([FromBody] UserSearchQuery model)
         {
@@ -81,7 +81,7 @@ namespace StudentMngt.Api.Controllers.Management
         }
 
         [Permission(CommonConstants.Permissions.VIEW_ROLE_PERMISSION)]
-        [HttpPost]
+        [HttpGet]
         [Route("get-roles")]
         public async Task<PageResult<RoleViewModel>> GetRoles([FromBody] RoleSearchQuery model)
         {
@@ -89,12 +89,57 @@ namespace StudentMngt.Api.Controllers.Management
             return result;
         }
 
+
         [Permission(CommonConstants.Permissions.VIEW_ROLE_PERMISSION)]
-        [HttpPost]
+        [HttpGet]
+        [Route("get-roles-by-user")]
+        public async Task<IList<String>> GetRolesByUser()
+        {
+            var result = await _userService.GetRolesByUser(UserName);
+            return result;
+        }
+
+
+
+
+        [Permission(CommonConstants.Permissions.VIEW_ROLE_PERMISSION)]
+        [HttpGet]
         [Route("get-role-detail")]
         public async Task<PageResult<RoleViewModel>> GetRoleDetail([FromBody] RoleSearchQuery model)
         {
             var result = await _userService.GetRoles(model);
+            return result;
+        }
+
+
+        // Taoj role 
+        [Permission(CommonConstants.Permissions.ADD_ROLE_PERMISSION)]
+        [HttpPost]
+        [Route("create-role")]
+        public async Task<ResponseResult> CreateRole([FromBody]CreateRoleViewModel model)
+        {
+            var result = await _userService.CreateRole(model);
+            return result;
+        }
+
+
+        // Tạo User
+        [Permission(CommonConstants.Permissions.ADD_USER_PERMISSION)]
+        [HttpPost]
+        [Route("create-user")]
+        public async Task<ResponseResult> CreateUser([FromBody] RegisterUserViewModel model)
+        {
+            var result = await _userService.RegisterCustomer(model);
+            return result;
+        }
+
+        // Get user by ClassID
+        [Permission(CommonConstants.Permissions.USER_PERMISSION)]
+        [HttpGet]
+        [Route("get-users-by-classId/{classesId}")]
+        public async Task<List<UserViewModel>> GetUsersByClassesId(Guid ClassesId)
+        {
+            var result = await _userService.GetListUserByClassId(ClassesId);
             return result;
         }
     }
