@@ -8,6 +8,7 @@ namespace StudentMngt.Domain.ApplicationServices.MajorAS
 {
     public class MajorSearchQuery : SearchQuery
     {
-        public Guid UserId { get; set; }
+        public Guid? UserId { get; set; }
+        public Guid Id { get; set; }
     }
 }

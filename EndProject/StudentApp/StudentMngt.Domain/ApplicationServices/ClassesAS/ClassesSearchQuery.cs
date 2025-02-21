@@ -8,6 +8,6 @@ namespace StudentMngt.Domain.ApplicationServices.ClassesAS
 {
     public class ClassesSearchQuery : SearchQuery
     {
-        public Guid UserId { get; set; }
+        public Guid Id { get; set; }
     }
 }

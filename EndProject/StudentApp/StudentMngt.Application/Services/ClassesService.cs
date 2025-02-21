@@ -15,6 +15,7 @@ namespace StudentMngt.Application.Services
         // private readonly IClassesService _ClassesService;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<Classes, Guid> _classesRepository;
+
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly ILogger<ClassesService> _logger;
 
@@ -28,6 +29,16 @@ namespace StudentMngt.Application.Services
 
         public async Task<ResponseResult> CreateClasses(CreateClassesViewModel viewModel, UserProfileModel currentUser)
         {
+            if(viewModel == null) throw new ArgumentNullException(nameof(viewModel));
+            if(String.IsNullOrWhiteSpace(currentUser.UserName))
+            {
+                throw new ArgumentNullException(nameof(currentUser));
+            }
+
+            if(viewModel.CohortId == Guid.Empty || viewModel.MajorId == Guid.Empty)
+            {
+                throw new ClassesException.HandleClassesException("Guid of CohortId or MajorId not incorrect");
+            }
             var classes = new Classes()
             {
                 Id = Guid.NewGuid(),
@@ -79,6 +90,7 @@ namespace StudentMngt.Application.Services
             {
                 throw new ClassesException.ClassesNotFoundException(classesId);
             }
+           
             var result = new ClassesViewModel()
             {
                 Id = classes.Id,
@@ -107,6 +119,9 @@ namespace StudentMngt.Application.Services
             {
                 classesQuery = classesQuery.Where(s => s.ClassName.Contains(query.Keyword));
             }
+       
+
+            classesQuery = classesQuery.OrderByDescending(s => s.CreatedDate);
             result.TotalCount = await classesQuery.CountAsync();
             result.Data = await classesQuery
                 .Skip(query.SkipNo).Take(query.TakeNo)

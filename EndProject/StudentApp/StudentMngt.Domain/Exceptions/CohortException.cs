@@ -37,5 +37,11 @@ namespace StudentMngt.Domain.Exceptions
             {
             }
         }
+
+        public class HandleCohortException : BadRequestException
+        {
+            public HandleCohortException(string message)
+                : base(message) { }
+        }
     }
 }

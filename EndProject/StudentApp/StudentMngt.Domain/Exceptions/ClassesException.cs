@@ -37,5 +37,11 @@ namespace StudentMngt.Domain.Exceptions
             {
             }
         }
+
+        public class HandleClassesException : BadRequestException
+        {
+            public HandleClassesException(string message)
+                : base(message) { }
+        }
     }
 }

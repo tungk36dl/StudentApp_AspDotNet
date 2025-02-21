@@ -9,6 +9,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System.Security.Claims;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Http;
+using System.Globalization;
 
 namespace StudentMngt.Application.Services
 {
@@ -19,18 +22,21 @@ namespace StudentMngt.Application.Services
         private readonly IGenericRepository<Permission, Guid> _permissionRepository;
         private readonly IGenericRepository<RolePermission, Guid> _rolePermissionRepository;
         private readonly IGenericRepository<Classes, Guid> _classesRepository;
+        private readonly ILogger<SubjectService> _logger;
+
 
         private readonly IJwtTokenService _tokenService;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _configuration;
 
-        public UserService(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, IGenericRepository<Permission, Guid> permissionRepository, IGenericRepository<RolePermission, Guid> rolePermissionRepository, IGenericRepository<Classes, Guid> classesRepository, IJwtTokenService tokenService, IUnitOfWork unitOfWork, IConfiguration configuration)
+        public UserService(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, IGenericRepository<Permission, Guid> permissionRepository, IGenericRepository<RolePermission, Guid> rolePermissionRepository, IGenericRepository<Classes, Guid> classesRepository, ILogger<SubjectService> logger, IJwtTokenService tokenService, IUnitOfWork unitOfWork, IConfiguration configuration)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _permissionRepository = permissionRepository;
             _rolePermissionRepository = rolePermissionRepository;
             _classesRepository = classesRepository;
+            _logger = logger;
             _tokenService = tokenService;
             _unitOfWork = unitOfWork;
             _configuration = configuration;
@@ -41,10 +47,35 @@ namespace StudentMngt.Application.Services
 
 
         #region Common
-        // Đăng nhập
+
+        //public async Task<AuthorizedResponseModel> Login(LoginViewModel model)
+        //{
+        //    var user = await _userManager.FindByEmailAsync(model.Email);
+        //    if (user == null)
+        //    {
+        //        throw new UserException.UserNotFoundException();
+        //    }
+        //    var checkPassword = await _userManager.CheckPasswordAsync(user, model.Password);
+        //    if (!checkPassword)
+        //    {
+        //        throw new UserException.PasswordNotCorrectException();
+        //    }
+
+        //    var claims = new List<Claim>
+        //    {
+        //        new("UserName", user.UserName),
+        //        new(ClaimTypes.Email, user.Email)
+
+        //    };
+        //    var response = new AuthorizedResponseModel() { JwtToken = _tokenService.GenerateAccessToken(claims) };
+        //    return response;
+
+        //}
+
+
         public async Task<AuthorizedResponseModel> Login(LoginViewModel model)
         {
-            var user = await _userManager.FindByEmailAsync(model.Email);
+            var user = await _userManager.FindByNameAsync(model.UserName);
             if (user == null)
             {
                 throw new UserException.UserNotFoundException();
@@ -59,12 +90,88 @@ namespace StudentMngt.Application.Services
             {
                 new("UserName", user.UserName),
                 new(ClaimTypes.Email, user.Email)
-
             };
-            var response = new AuthorizedResponseModel() { JwtToken = _tokenService.GenerateAccessToken(claims) };
-            return response;
 
+            var (accessToken, refreshToken) = _tokenService.GenerateTokens(claims);
+
+            // ✅ Lưu Refresh Token vào bảng AspNetUserTokens
+            await SaveRefreshToken(user, refreshToken);
+
+            return new AuthorizedResponseModel()
+            {
+                JwtToken = accessToken,
+                RefreshToken = refreshToken
+            };
         }
+
+        public async Task<AuthorizedResponseModel> RefreshToken(RefreshTokenRequest request)
+        {
+            var principal = _tokenService.GetPrincipalFromExpiredToken(request.AccessToken);
+            if (principal == null)
+            {
+                throw new UserException.HandleUserException("Invalid access token");
+            }
+
+            var email = principal.FindFirstValue(ClaimTypes.Email);
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                throw new UserException.UserNotFoundException();
+            }
+
+            // ✅ Lấy Refresh Token từ bảng AspNetUserTokens
+            var savedRefreshToken = await _userManager.GetAuthenticationTokenAsync(user, "JWT", "RefreshToken");
+            if (savedRefreshToken == null || savedRefreshToken != request.RefreshToken)
+            {
+                throw new UserException.HandleUserException("Invalid refresh token");
+            }
+
+            var newClaims = new List<Claim>
+    {
+        new("UserName", user.UserName),
+        new(ClaimTypes.Email, user.Email)
+    };
+
+            var (newAccessToken, newRefreshToken) = _tokenService.GenerateTokens(newClaims);
+
+            // ✅ Cập nhật Refresh Token mới
+            await SaveRefreshToken(user, newRefreshToken);
+
+            return new AuthorizedResponseModel()
+            {
+                JwtToken = newAccessToken,
+                RefreshToken = newRefreshToken
+            };
+        }
+
+
+        public async Task SaveRefreshToken(AppUser user, string refreshToken)
+        {
+            var existingToken = await _userManager.GetAuthenticationTokenAsync(user, "JWT", "RefreshToken");
+
+            if (existingToken != null)
+            {
+                await _userManager.RemoveAuthenticationTokenAsync(user, "JWT", "RefreshToken");
+            }
+
+            await _userManager.SetAuthenticationTokenAsync(user, "JWT", "RefreshToken", refreshToken);
+        }
+
+
+        public async Task Logout(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                throw new UserException.UserNotFoundException();
+            }
+
+            // ✅ Xóa Refresh Token khỏi bảng AspNetUserTokens
+            await _userManager.RemoveAuthenticationTokenAsync(user, "JWT", "RefreshToken");
+        }
+
+
+
 
         // Lấy thông tin user
         public async Task<UserProfileModel> GetUserProfile(string userName)
@@ -197,7 +304,7 @@ namespace StudentMngt.Application.Services
             {
                 UserName = model.UserName,
                 Email = model.Email,
-                PhoneNumber = model.PhoneNummber,
+                PhoneNumber = model.PhoneNumber,
                 Code = model.Code,
                 Address = model.Address,
                 ClassesId = model.ClassesId,
@@ -216,6 +323,77 @@ namespace StudentMngt.Application.Services
             }
         }
 
+        public async Task<ResponseResult> CreateUser(RegisterUserViewModel model)
+        {
+            if (DateTime.TryParseExact(model.DateOfBirth, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime date))
+            {
+                _logger.LogDebug("Ngày hợp lệ: " + date);
+            }
+            else
+            {
+                _logger.LogDebug("Ngày sinh không đúng định dạng dd/MM/yyyy!!!");
+                throw new UserException.HandleUserException("Ngày sinh không đúng định dạng dd/MM/yyyy");
+            }
+
+            var initUserWithEmail = await _userManager.FindByEmailAsync(model.Email);
+            if(initUserWithEmail != null)
+            {
+                _logger.LogDebug($"Email {model.Email} đã được sử dụng!!!");
+                throw new UserException.HandleUserException($"Email {model.Email} đã được sử dụng!!!");
+            }
+            var initUserWithCode = await _userManager.Users.Where(s => s.Code == model.Code).FirstOrDefaultAsync();
+            if(initUserWithCode != null)
+            {
+                var error = $"Mã {model.Code} đã tồn tại";
+                _logger.LogDebug(error);
+                throw new UserException.HandleUserException(error);
+            }
+            var user = new AppUser()
+            {
+                UserName = model.UserName,
+                Email = model.Email,
+                PhoneNumber = model.PhoneNumber,
+                Code = model.Code,
+                FullName = model.FullName,
+                DateOfBirth = date,
+                Address = model.Address,
+                ClassesId = model.ClassesId,
+                IsSystemUser = false
+            };
+
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (result.Succeeded)
+            {
+
+                // Đăng ký role cho user
+                _logger.LogDebug($"đăng ký role {model.RoleName} cho user {model.UserName}");
+                if(!String.IsNullOrEmpty(model.RoleName)) {
+                    List<String> roleNames = new List<String>();
+                    roleNames.Add(model.RoleName);
+                    AssignRolesViewModel assignRolesViewModel = new AssignRolesViewModel()
+                    {
+                        UserName = model.UserName,
+                        RoleNames = roleNames
+                    };
+                    var addRoleForUser = await AssignRoles(assignRolesViewModel);
+                    return ResponseResult.Success();
+                }
+                else
+                {
+                    _logger.LogDebug("RoleName null!!!");
+                    var errors = JsonConvert.SerializeObject(result.Errors);
+                    throw new UserException.HandleUserException(errors);
+
+                }
+            }
+            else
+            {
+                var errors = JsonConvert.SerializeObject(result.Errors);
+                throw new UserException.HandleUserException(errors);
+            }
+        }
+
+
 
 
 
@@ -229,7 +407,7 @@ namespace StudentMngt.Application.Services
             {
                 UserName = model.UserName,
                 Email = model.Email,
-                PhoneNumber = model.PhoneNummber,
+                PhoneNumber = model.PhoneNumber,
                 Code = model.Code,
                 Address = model.Address,
                 IsSystemUser = true
@@ -277,6 +455,9 @@ namespace StudentMngt.Application.Services
             {
                 throw new UserException.UserNotFoundException();
             }
+            _logger.LogDebug($"user:  {user.UserName}");
+            _logger.LogDebug($"Role: {model.RoleNames[0]}");
+         
 
             var result = await _userManager.AddToRolesAsync(user, model.RoleNames);
             if (result.Succeeded)
@@ -492,6 +673,94 @@ namespace StudentMngt.Application.Services
             };
             return result;
             
+        }
+
+
+        public async Task<RoleViewModel> GetRoleDetailByName(String roleName)
+        {
+            var roles = _roleManager.Roles;
+            var permissions = await _permissionRepository.FindAll().ToListAsync();
+            var rolePermission = _rolePermissionRepository.FindAll();
+
+            var role = roles.FirstOrDefault(s => s.Name == roleName);
+            if (role == null)
+            {
+                throw new UserException.RoleNotFoundException();
+            }
+            Guid roleId = role.Id;
+
+            /*
+            var permissionCodesInRole = await (from r in roles
+                    join rp in rolePermission on r.Id equals rp.RoleId
+                    where r.Id == roleId
+                    select rp.PermissionCode).ToListAsync();
+            */
+            var permissionCodesInRole = await rolePermission.Where(s => s.RoleId == roleId).Select(s => s.PermissionCode).ToListAsync();
+
+            // Mapping cacs pẻmission thuộc role hiện tại với tất cả các permission
+            var permissionViewModels = permissions.Select(s => new PermissionViewModel
+            {
+                // Nếu permission có tồn tại trong role hiện tịa thì íINRole = True
+                IsInRole = permissionCodesInRole.Contains(s.Code),
+                PermissionName = s.Name,
+                PermissionCode = s.Code,
+                ParentPermissionCode = s.ParentCode
+            }).ToList();
+
+            var usersInRole = (await _userManager.GetUsersInRoleAsync(role.Name)).Select(s => new UserViewModel
+            {
+                UserId = s.Id,
+                PhoneNumber = s.PhoneNumber,
+                UserName = s.UserName,
+                Code = s.Code,
+                Address = s.Address ?? "",
+                Email = s.Email
+            }).ToList();
+            var result = new RoleViewModel
+            {
+                RoleId = role.Id,
+                RoleName = role.Name,
+                Permissions = permissionViewModels,
+                UsersInRole = usersInRole
+            };
+            return result;
+
+        }
+
+
+        public async Task<PageResult<UserViewModel>> GetUserByRoleName(UserSearchQuery query)
+        {
+            String roleName = query.RoleName ?? "";
+
+            var result = new PageResult<UserViewModel>() { CurrentPage = query.PageIndex };
+
+            if (String.IsNullOrEmpty(roleName))
+            {
+                _logger.LogDebug("roleName null!!!");
+                throw new UserException.HandleUserException("roleName null!!!");
+            }
+
+            var userInRole = await _userManager.GetUsersInRoleAsync(roleName);
+            if (userInRole == null)
+            {
+                _logger.LogDebug($"role {roleName} not found user!!");
+                throw new UserException.HandleUserException($"role {roleName} not found user!!");
+            }
+            var users = userInRole.Select(s => new UserViewModel()
+            {
+                UserId = s.Id,
+                Email = s.Email,
+                PhoneNumber = s.PhoneNumber,
+                Code = s.Code,
+                Address = s.Address ?? "",
+                UserName = s.UserName,
+            });
+
+            result.TotalCount = users.Count();
+            //result.TotalCount = await users.CountAsync();
+            result.Data = users.ToList();
+            return result;
+
         }
 
         #endregion

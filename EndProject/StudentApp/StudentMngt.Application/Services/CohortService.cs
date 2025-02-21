@@ -100,6 +100,8 @@ namespace StudentMngt.Application.Services
             {
                 cohortQuery = cohortQuery.Where(s => s.CohortName.Contains(query.Keyword));
             }
+
+            cohortQuery = cohortQuery.OrderByDescending(s => s.CreatedDate);
             result.TotalCount = await cohortQuery.CountAsync();
             result.Data = await cohortQuery
                 .Skip(query.SkipNo).Take(query.TakeNo)

@@ -248,6 +248,8 @@ namespace StudentMngt.Application.Services
             {
                 //subjectDetailQuery = subjectDetailQuery.Where(s => s.subjectDetailName.Contains(query.Keyword));
             }
+            subjectDetailQuery = subjectDetailQuery.OrderByDescending(s => s.CreatedDate);
+
             result.TotalCount = await subjectDetailQuery.CountAsync();
             result.Data = await subjectDetailQuery
                 .Skip(query.SkipNo).Take(query.TakeNo)

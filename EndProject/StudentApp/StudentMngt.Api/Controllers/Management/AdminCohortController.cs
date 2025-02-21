@@ -17,7 +17,7 @@ namespace StudentMngt.Api.Controllers.Management
             _cohortService = cohortService;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("get-all-cohort")]
         public async Task<PageResult<CohortViewModel>> GetAllSubjecCohort([FromBody]CohortSearchQuery query)
         {

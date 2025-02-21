@@ -14,12 +14,15 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAllOrigins",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000") // Thay đổi URL frontend nếu cần
+            policy.WithOrigins("http://localhost:3000") // Cấu hình đúng URL frontend
                   .AllowAnyMethod()
                   .AllowAnyHeader()
-                  .AllowCredentials(); // Nếu dùng cookie/token
+                  .AllowCredentials()
+                  .SetIsOriginAllowed(origin => true) // Chấp nhận tất cả origin
+                  .WithExposedHeaders("*"); // Cho phép tất cả headers phản hồi
         });
 });
+
 Log.Logger = new LoggerConfiguration().ReadFrom
     .Configuration(builder.Configuration)
     .CreateLogger();

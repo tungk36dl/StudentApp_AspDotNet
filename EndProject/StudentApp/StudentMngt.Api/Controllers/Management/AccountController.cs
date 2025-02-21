@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using StudentMngt.Domain.ApplicationServices.Users;
 using StudentMngt.Domain;
 using StudentMngt.Domain.Utility;
+using StudentMngt.Domain.ApplicationServices.ClassesAS;
 
 namespace StudentMngt.Api.Controllers.Management
 {
@@ -80,7 +81,16 @@ namespace StudentMngt.Api.Controllers.Management
             return result;
         }
 
-        [Permission(CommonConstants.Permissions.VIEW_ROLE_PERMISSION)]
+        [Permission(CommonConstants.Permissions.VIEW_USER_PERMISSION)]
+        [HttpPost]
+        [Route("get-users-by-rolename")]
+        public async Task<PageResult<UserViewModel>> GetUserByRoleName([FromBody] UserSearchQuery model)
+        {
+            var result = await _userService.GetUserByRoleName(model);
+            return result;
+        }
+
+        //[Permission(CommonConstants.Permissions.VIEW_ROLE_PERMISSION)]
         [HttpGet]
         [Route("get-roles")]
         public async Task<PageResult<RoleViewModel>> GetRoles([FromBody] RoleSearchQuery model)
@@ -90,7 +100,7 @@ namespace StudentMngt.Api.Controllers.Management
         }
 
 
-        [Permission(CommonConstants.Permissions.VIEW_ROLE_PERMISSION)]
+        //[Permission(CommonConstants.Permissions.VIEW_ROLE_PERMISSION)]
         [HttpGet]
         [Route("get-roles-by-user")]
         public async Task<IList<String>> GetRolesByUser()
@@ -105,9 +115,9 @@ namespace StudentMngt.Api.Controllers.Management
         [Permission(CommonConstants.Permissions.VIEW_ROLE_PERMISSION)]
         [HttpGet]
         [Route("get-role-detail")]
-        public async Task<PageResult<RoleViewModel>> GetRoleDetail([FromBody] RoleSearchQuery model)
+        public async Task<RoleViewModel> GetRoleDetail([FromQuery] String roleName)
         {
-            var result = await _userService.GetRoles(model);
+            var result = await _userService.GetRoleDetailByName(roleName);
             return result;
         }
 
@@ -123,24 +133,25 @@ namespace StudentMngt.Api.Controllers.Management
         }
 
 
-        // Tạo User
+        // Tạo User cos gawns role cho user
         [Permission(CommonConstants.Permissions.ADD_USER_PERMISSION)]
         [HttpPost]
         [Route("create-user")]
         public async Task<ResponseResult> CreateUser([FromBody] RegisterUserViewModel model)
         {
-            var result = await _userService.RegisterCustomer(model);
+            var result = await _userService.CreateUser(model);
             return result;
         }
 
         // Get user by ClassID
-        [Permission(CommonConstants.Permissions.USER_PERMISSION)]
-        [HttpGet]
-        [Route("get-users-by-classId/{classesId}")]
-        public async Task<List<UserViewModel>> GetUsersByClassesId(Guid ClassesId)
+        [Permission(CommonConstants.Permissions.VIEW_USER_PERMISSION)]
+        [HttpPost]
+        [Route("get-users-by-classId")]
+        public async Task<List<UserViewModel>> GetUsersByClassesId([FromBody] ClassesSearchQuery query)
         {
-            var result = await _userService.GetListUserByClassId(ClassesId);
+            var result = await _userService.GetListUserByClassId(query.Id);
             return result;
         }
+
     }
 }

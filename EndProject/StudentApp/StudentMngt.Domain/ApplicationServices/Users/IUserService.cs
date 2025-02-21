@@ -3,6 +3,9 @@
     public interface IUserService
     {
         #region Commons
+
+        Task<AuthorizedResponseModel> RefreshToken(RefreshTokenRequest request);
+        Task Logout(string userId);
         Task<AuthorizedResponseModel> Login(LoginViewModel model);
         Task<UserProfileModel> GetUserProfile(string userName);
         Task<bool> InitializeUserAdminAsync();
@@ -15,6 +18,7 @@
 
         #region Customers
         Task<ResponseResult> RegisterCustomer(RegisterUserViewModel model);
+        Task<ResponseResult> CreateUser(RegisterUserViewModel model);
         Task<IList<String>> GetRolesByUser(String userName);
         #endregion
 
@@ -27,10 +31,13 @@
         Task<ResponseResult> AssignPermissions(AssignPermissionsViewModel model);
 
         Task<PageResult<UserViewModel>> GetUsers(UserSearchQuery query);
+        Task<PageResult<UserViewModel>> GetUserByRoleName(UserSearchQuery query);
 
         Task<PageResult<RoleViewModel>> GetRoles(RoleSearchQuery query);
 
         Task<RoleViewModel> GetRoleDetail(Guid roleId);
+
+        Task<RoleViewModel> GetRoleDetailByName(String roleName);
 
         Task<ResponseResult> CreateRole(CreateRoleViewModel model);
 

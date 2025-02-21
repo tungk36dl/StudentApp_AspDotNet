@@ -16,7 +16,7 @@ namespace StudentMngt.Api.Controllers.Management
             _majorService = majorService;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("get-all-major")]
         public async Task<PageResult<MajorViewModel>> GetAllMajor(MajorSearchQuery query)
         {
@@ -25,11 +25,11 @@ namespace StudentMngt.Api.Controllers.Management
             return result;
         }
 
-        [HttpGet]
-        [Route("get-major/{majorId}")]
-        public async Task<MajorViewModel> GetMajorById(Guid majorId)
+        [HttpPost]
+        [Route("get-major")]
+        public async Task<MajorViewModel> GetMajorById(MajorSearchQuery query)
         {
-            var result = await _majorService.GetMajorById(majorId);
+            var result = await _majorService.GetMajorById(query.Id);
             return result;
         }
 

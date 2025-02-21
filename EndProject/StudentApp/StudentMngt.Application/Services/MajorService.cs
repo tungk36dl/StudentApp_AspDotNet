@@ -102,6 +102,8 @@ namespace StudentMngt.Application.Services
             {
                 majorQuery = majorQuery.Where(s => s.MajorName.Contains(query.Keyword));
             }
+            majorQuery = majorQuery.OrderByDescending(s => s.CreatedDate);
+
             result.TotalCount = await majorQuery.CountAsync();
             result.Data = await majorQuery
                 .Skip(query.SkipNo).Take(query.TakeNo)

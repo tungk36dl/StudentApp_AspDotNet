@@ -107,6 +107,8 @@ namespace StudentMngt.Application.Services
             {
                 subjectQuery = subjectQuery.Where(s => s.SubjectName.Contains(query.Keyword));
             }
+            subjectQuery = subjectQuery.OrderByDescending(s => s.CreatedDate);
+
             result.TotalCount = await subjectQuery.CountAsync();
             result.Data = await subjectQuery
                 .Skip(query.SkipNo).Take(query.TakeNo)

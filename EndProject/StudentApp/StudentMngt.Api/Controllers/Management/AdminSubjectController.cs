@@ -16,7 +16,7 @@ namespace StudentMngt.Api.Controllers.Management
             _subjectService = subjectService;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("get-all-subject")]
         public async Task<PageResult<SubjectViewModel>> GetAllSubject(SubjectSearchQuery query)
         {
@@ -25,11 +25,11 @@ namespace StudentMngt.Api.Controllers.Management
             return result;
         }
 
-        [HttpGet]
-        [Route("get-subject/{subjectId}")]
-        public async Task<SubjectViewModel> GetSubjectById(Guid subjectId)
+        [HttpPost]
+        [Route("get-subject")]
+        public async Task<SubjectViewModel> GetSubjectById(SubjectSearchQuery query)
         {
-            var result = await _subjectService.GetSubjectById(subjectId);
+            var result = await _subjectService.GetSubjectById(query.Id);
             return result;
         }
 

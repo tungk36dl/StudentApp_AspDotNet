@@ -16,27 +16,30 @@ namespace StudentMngt.Api.Controllers.Management
             _classesService = classesService;
         }
 
-        [HttpGet]
+
+        [HttpPost]
         [Route("get-all-classes")]
         public async Task<PageResult<ClassesViewModel>> GetAllClasses(ClassesSearchQuery query)
         {
-            query.UserId = CurrentUser.UserId;
+            query.Id = CurrentUser.UserId;
             var result = await _classesService.GetClassess(query);
             return result;
         }
 
-        [HttpGet]
-        [Route("get-classes/{classesId}")]
-        public async Task<ClassesViewModel> GetClassesById(Guid classesId)
+
+        [Permission(CommonConstants.Permissions.VIEW_CLASSES_PERMISSION)]
+        [HttpPost]
+        [Route("get-classes")]
+        public async Task<ClassesViewModel> GetClassesById(ClassesSearchQuery query)
         {
-            var result = await _classesService.GetClassesById(classesId);
+            var result = await _classesService.GetClassesById(query.Id);
             return result;
         }
 
         [Permission(CommonConstants.Permissions.ADD_CLASSES_PERMISSION)]
         [HttpPost]
         [Route("create-classes")]
-        public async Task<ResponseResult> CreatClasses([FromBody] CreateClassesViewModel model)
+        public async Task<ResponseResult> CreateClasses([FromBody] CreateClassesViewModel model)
         {
             var result = await _classesService.CreateClasses(model, CurrentUser);
             return result;
